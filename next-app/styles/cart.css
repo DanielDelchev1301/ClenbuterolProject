@@ -1,0 +1,93 @@
+.cartMainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.cartContainer {
+    flex: 2;
+}
+
+.cartContainer h2 {
+    text-align: center;
+}
+
+.cartStepContainer {
+    margin: 100px 0px;
+}
+
+.offerAdditionalProductsContainer {
+    flex: 1;
+    margin: 50px 0px;
+}
+
+.cartLinksContainer {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cartLinkButton {
+    margin: 8px;
+    padding: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #F79633;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 5px grey;
+}
+
+.cartLinkButton:hover {
+    box-shadow: 0px 3px 10px grey;
+    color: #db842d;
+    transition: 300ms;
+}
+
+.cartStepContainer .Mui-completed, .cartStepContainer .Mui-active{
+    color: #F79633 !important;
+}
+
+.cartProductsContainer {
+    background: white;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+}
+
+.cartStepsButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.cartStepsButton {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.cartStepsButtonBack {
+    background-color: #ff9f9f;
+}
+
+.cartStepsButtonBack:hover {
+    background-color: #ff8c8c;
+}
+
+.cartStepsButtonNext {
+    background-color: #9cfa9c;
+}
+
+.cartStepsButtonNext:hover {
+    background-color: #81f781;
+}
+
+.backButtonHidden {
+    visibility: hidden;
+}

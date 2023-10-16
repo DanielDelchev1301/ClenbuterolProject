@@ -1,0 +1,70 @@
+.blogLayoutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.blogMainContainer {
+    flex: 2;
+    margin: 50px 20px;
+    width: 90%;
+}
+
+.linkToDifferentPartsOfTheBlog {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #F79633;
+}
+
+.linkToDifferentPartsOfTheBlog:hover {
+    color: #db842d;
+}
+
+p {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+}
+
+.blogAdditionalInfo {
+    flex: 1;
+    margin: 150px 0px;
+}
+
+.blogLinksContainer {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.blogLinkButton {
+    margin: 8px;
+    padding: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #F79633;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 5px grey;
+}
+
+.blogLinkButton:hover {
+    box-shadow: 0px 3px 10px grey;
+    color: #db842d;
+    transition: 300ms;
+}
+
+.youtubeVideo {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .youtubeVideo {
+        height: 300px;
+    }
+}

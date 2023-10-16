@@ -1,0 +1,107 @@
+.headerContainer {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 999;
+    /* background-color: rgba(81, 73, 90, 0.336); */
+    background-image: linear-gradient(to bottom right, white, #f7953321);
+    opacity: 0.9;
+    top: 0;
+}
+
+.navBarMenuButton {
+    display: flex;
+    background-color: #F79633;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    width: 8%;
+    padding: 12px;
+    justify-content: space-around;
+}
+
+.navBarMenuButton:hover {
+    background-color: #c97928;
+}
+
+.menuIcon {
+    font-size: 45px !important;
+}
+
+.menuOptions {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 71px;
+    width: 50%;
+    align-items: center;
+    border: 1px solid #F79633;
+    right: 0px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.shoppingBasketIcon {
+    font-size: 40px;
+    margin: 14px 25px;
+    cursor: pointer;
+    color: #F79633 !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .navBarMenuButton {
+        width: 13%;
+    }
+    .menuOptions {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navBarMenuButton {
+        width: 15%;
+    }
+    .menuIcon {
+        font-size: 40px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navBarMenuButton {
+        width: 20%;
+    }
+    .menuOptions {
+        width: 90%;
+    }
+    .menuIcon {
+        font-size: 30px !important;
+    }
+}
+
+.link {
+    width: 100%;
+    background-color: white;
+    color: #F79633;
+    text-align: center;
+    margin: 0;
+    padding: 15px 0px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.link:hover {
+    background-color: #e4892e;
+    color: white;
+    transition: 300ms ease-in-out;
+}
+
+.navBarLogo {
+    width: 80px;
+    height: 80px;
+}

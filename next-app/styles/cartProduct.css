@@ -1,0 +1,48 @@
+.cartProductContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.cartProductInfoContainer {
+    min-width: 50%;
+    margin: 10px;
+}
+
+.cartProductLabel {
+    opacity: 0.6;
+}
+
+.cartProductLabel span {
+    font-weight: 600;
+}
+
+.cartPorductButton {
+    padding: 5px 15px;
+    font-size: 20px;
+    margin: 0px 4px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonPlus {
+    background-color: #9cfa9c;
+    cursor: pointer;
+}
+
+.buttonPlus:hover {
+    background-color: #81f781;
+}
+
+.buttonMinus {
+    background-color: #ffa3a3;
+    cursor: pointer;
+}
+
+.buttonMinus:hover {
+    background-color: #ff8c8c;
+}

@@ -1,0 +1,75 @@
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 50px 25px;
+    box-shadow: 0px 3px 5px grey;
+    transition: 300ms;
+}
+
+.productContainer:hover {
+    transform: scale(1.02);
+}
+
+.productImage {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.productContent {
+    width: 90%;
+    margin: auto;
+}
+
+.productHeader {
+    text-decoration: none;
+    color: #F79633;
+}
+
+.productHeader:hover {
+    color: #fda44b;
+}
+
+.productPrice {
+    color: #00a800; 
+    font-weight: bold;
+}
+
+.productOldPrice {
+    color: #ff9f9f; 
+    text-decoration: line-through; 
+    font-size: 15px;
+}
+
+.productButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productButton {
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addToCartButton {
+    background-color: #9cfa9c;
+}
+
+.addToCartButton:hover {
+    background-color: #81f781;
+}
+
+.learnMoreButton {
+    background-color: #F79633;
+}
+
+.learnMoreButton:hover {
+    background-color: #f78e26;
+}

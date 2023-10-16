@@ -1,0 +1,45 @@
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0px;
+    position: relative;
+    height: 500px;
+    background-color: #121521;
+    color: white;
+}
+
+.footerContainer h3, .footerContainer p {
+    color: white;
+}
+
+.footerIconsContainer {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconFooter {
+    font-size: 80px;
+    color: #F79633;
+}
+
+.footerIconText {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.footerMoreInfoContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
