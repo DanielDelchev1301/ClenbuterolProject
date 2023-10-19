@@ -63,7 +63,7 @@ function Product({
                 width={width} 
                 height={height}
                 className="productImage"
-                />
+            />
             <div className="productContent">
                 <Link href={href} className="productHeader">{heading}</Link>
                 <p className="productPrice">{oldPrice && <span className="productOldPrice">{oldPrice}</span>} {price}</p>

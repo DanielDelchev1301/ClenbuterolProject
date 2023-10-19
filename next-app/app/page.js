@@ -2,6 +2,12 @@ import Product from '@/components/Product';
 import '@/styles/home.css'
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Clen Peak Performance: Your Trusted Source for Clenbuterol Information and Support',
+  description: 'Clen Peak Performance is a trusted source of information and support for individuals interested in the world of clenbuterol. Our mission is to promote safety, knowledge, and responsible choices. We aim to educate, emphasizing the potential risks and legal considerations while providing valuable insights for those considering clenbuterol. We strive to be a beacon of integrity, guiding you towards better-informed decisions that prioritize health, well-being, and compliance with regulations.',
+  keywords: 'clenbuterol, buy clenbuterol, clenbuterol sopharma price, buy clenbuterol sopharma, clenbuterol sopharma, clenbuterol sopharma buy, clen sopharma buy, clenbuterol sopharma buy online'
+};
+
 function Home() {
   return (
     <section className="homeMainContainer">
@@ -13,17 +19,17 @@ function Home() {
         </div>
         <div className="blogLinksContainer">
           <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
+          <Link href="/blogs/clenAndThermogenicEffects" className="blogLinkButton">Clenbuterol and Thermogenic Effects: A Closer Look</Link>
+          <Link href="/blogs/musclePreservationWithClen" className="blogLinkButton">Muscle Preservation with Clenbuterol</Link>
+          <Link href="/blogs/clenDosingProtocols" className="blogLinkButton">Clenbuterol Dosing Protocols: Strategies for Safe and Effective Use</Link>
         </div>
       </div>
       <div className="homeFlexContainer">
         <div className="blogLinksContainer">
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
+          <Link href="/blogs/clenCycling" className="blogLinkButton">Cycling Clenbuterol: Strategies for Effective Usage</Link>
+          <Link href="/blogs/clenWithOtherCompounds" className="blogLinkButton">Stacking Clenbuterol with Other Compounds: Strategies and Considerations</Link>
+          <Link href="/blogs/clenSideEffects" className="blogLinkButton">Clenbuterol Side Effects: What You Need to Know</Link>
+          <Link href="/blogs/clenTolerance" className="blogLinkButton">Clenbuterol Tolerance: Understanding and Managing It</Link>
         </div>
         <div className="productsContainer">
           <Product 
@@ -57,18 +63,17 @@ function Home() {
           </p>
         </div>
         <div className="blogLinksContainer">
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
+          <Link href="/blogs/clenLegalStatus" className="blogLinkButton">Legal Status of Clenbuterol: A Global Perspective</Link>
+          <Link href="/blogs/clenMisuseAndAbuse" className="blogLinkButton">Misuse and Abuse of Clenbuterol: Risks and Consequences</Link>
+          <Link href="/blogs/clenHealthRisks" className="blogLinkButton">Clenbuterol Health Risks: What You Need to Know</Link>
+          <Link href="/blogs/clenTestingAndDetection" className="blogLinkButton">Clenbuterol Testing and Detection: What Athletes and Users Should Know</Link>
         </div>
       </div>
       <div className="homeFlexContainer">
         <div className="blogLinksContainer">
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-          <Link href="/blogs/clenAsAPerformanceDrug" className="blogLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
+          <Link href="/blogs/clenAlternatives" className="blogLinkButton">Alternatives to Clenbuterol in Bodybuilding: Safe and Effective Options</Link>
+          <Link href="/blogs/clenConsultation" className="blogLinkButton">Consultation with a Healthcare Professional: Essential in Bodybuilding</Link>
+          <Link href="/blogs/clenEthicalConsiderations" className="blogLinkButton">Ethical Considerations of Clenbuterol Use in Bodybuilding</Link>
         </div>
         <div className="productsContainer">
           <Product 

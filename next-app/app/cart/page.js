@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import '../../styles/cart.css';
 import Link from 'next/link';
 import Product from '@/components/Product';
-import { Stepper, Step, StepLabel } from '@mui/material';
+import { Stepper, Step, StepLabel, TextField } from '@mui/material';
 import CartProduct from '@/components/CartProduct';
 
 const steps = ['Cart', 'Shipping', 'Payment'];
@@ -15,10 +15,59 @@ function Cart() {
     const [step, setStep] = useState(0);
     const [finalPrice, setFinalPrice] = useState(0);
     const [savedMoney, setSavedMoney] = useState(0);
+    const [seeMore, setSeeMore] = useState(false);
+    const [isDisabled, setIsDisabled] = useState(false);
+    const [shippingAddress, setShippingAddress] = useState({
+        email: {
+            value: '',
+            error: false
+        },
+        firstName: {
+            value: '',
+            error: false
+        },
+        lastName: {
+            value: '',
+            error: false
+        },
+        country: {
+            value: '',
+            error: false
+        },
+        city: {
+            value: '',
+            error: false
+        },
+        zipCode: {
+            value: '',
+            error: false
+        },
+        address: {
+            value: '',
+            error: false
+        },
+        mobileNumber: {
+            value: '',
+            error: false
+        },
+    });
 
     useEffect(() => {
         setCartProducts(window.localStorage.getItem('cart') ? JSON.parse(window.localStorage.getItem('cart')) : []);
     }, []);
+
+    useEffect(() => {
+        setIsDisabled((!shippingAddress.firstName.value.length || 
+            !shippingAddress.lastName.value.length || 
+            !shippingAddress.country.value.length || 
+            !shippingAddress.city.value.length || 
+            !shippingAddress.zipCode.value.length || 
+            !shippingAddress.address.value.length || 
+            !shippingAddress.email.value.length || 
+            shippingAddress.email.error) &&
+            step === 1
+        );
+    }, [shippingAddress, step]);
 
     useEffect(() => {
         if (Object.keys(cartProductsWithQuantity).length) {
@@ -51,52 +100,193 @@ function Cart() {
         }
     }, [cartProducts]);
 
+    const handleGoBack = () => {
+        window.scrollTo({top: 300, behavior: 'smooth'});
+        setStep(prev => prev - 1)
+    };
+
+    const handleGoNext = () => {
+        window.scrollTo({top: 300, behavior: 'smooth'});
+        setStep(prev => prev + 1)
+    };
+
+    const handleChange = (value, name) => {
+        let _value = value;
+        if (name === 'email') {
+            if (/^[A-Za-z0-9._%+-]+@\S[a-zA-Z0-9.-]+\.[a-z]{1,4}\S$/.test(value)) {
+                _value = value;
+            } else {
+                _value = '';
+            }
+        }
+        setShippingAddress(prev => ({
+            ...prev,
+            [name]: {error: !_value.length, value: value}
+        }));
+    };
+
     const renderStepContent = (step) => {
         switch(step) {
             case 0:
             return (
                 <div className="cartProductsContainer">
-                    {Object.values(cartProductsWithQuantity).sort((a,b) => a.title.localeCompare(b.title)).map((product) => (
-                        <CartProduct key={product.heading} product={product} setCartProducts={setCartProducts}/>
-                    ))}
-                    <p>${finalPrice.toFixed(2)}</p>
-                    <p>${savedMoney.toFixed(2)}</p>
+                    {Object.values(cartProductsWithQuantity).length 
+                        ?
+                        <>
+                            {Object.values(cartProductsWithQuantity).sort((a,b) => a.title.localeCompare(b.title)).map((product) => (
+                                <CartProduct key={product.heading} product={product} setCartProducts={setCartProducts}/>
+                                ))}
+                            <div className="finalAndSavedMoneyContainer">
+                                <p className="finalAndSaved">Shipping Cost: <span className="shippingCost">$0.00</span></p>
+                                {savedMoney ? <p className="finalAndSaved">Money Saved: <span className="savedMoney">${savedMoney.toFixed(2)}</span></p> : <></>}
+                                {finalPrice ? <p className="finalAndSaved">Final Price: <span className="finalMoney">${finalPrice.toFixed(2)}</span></p> : <></>}
+                            </div>
+                        </>
+                        :
+                        <div className="emptyShoppingCartContainer">
+                            <p className="emptyShoppingCartMessage">Your shopping cart is empty, please add items to it.</p>
+                        </div>
+                    }
                 </div>
             );
             case 1:
             return (
                 <div className="cartShippingContainer">
                     <div className="cartShippingInfoContainer">
-                        <h3>Shipping Address</h3>
+                        <h3 className="cartShippingHeader">Shipping Address</h3>
                         <div className="cartShippingAddressContainer">
-                            <div className="cartShippingAddress">
-                                <span className="cartShippingAddressName">John Doe</span>
-                                <span className="cartShippingAddressStreet">1234 Main Street</span>
-                                <span className="cartShippingAddressCity">Anytown, CA 12345</span>
-                                <span className="cartShippingAddressCountry">United States</span>
-                            </div>
-                            <div className="cartShippingAddressEditContainer">
-                                <Link href="/cart/shipping">
-                                    Edit
-                                </Link>
-                            </div>
+                            <TextField
+                                className="textField"
+                                required
+                                error={shippingAddress.email.error}
+                                helperText={shippingAddress.email.error ? 'Please enter a valid email address e.g. (example@gmail.com)' : ''}
+                                label="Email"
+                                variant="standard"
+                                color="warning"
+                                value={shippingAddress.email.value}
+                                onChange={(e) => handleChange(e.target.value, 'email')}
+                            />
+                            <TextField
+                                className="textField"
+                                required
+                                error={shippingAddress.firstName.error}
+                                helperText={shippingAddress.firstName.error ? 'This field is required.' : ''}
+                                label="First Name"
+                                variant="standard"
+                                color="warning"
+                                value={shippingAddress.firstName.value}
+                                onChange={(e) => handleChange(e.target.value, 'firstName')}
+                            />
+                            <TextField
+                                className="textField"
+                                required
+                                error={shippingAddress.lastName.error}
+                                helperText={shippingAddress.lastName.error ? 'This field is required.' : ''}
+                                label="Last Name"
+                                variant="standard"
+                                color="warning"
+                                value={shippingAddress.lastName.value}
+                                onChange={(e) => handleChange(e.target.value, 'lastName')}
+                            />
+                            <TextField
+                                className="textField"
+                                required
+                                error={shippingAddress.country.error}
+                                helperText={shippingAddress.country.error ? 'This field is required.' : ''}
+                                label="Country"
+                                variant="standard"
+                                color="warning"
+                                value={shippingAddress.country.value}
+                                onChange={(e) => handleChange(e.target.value, 'country')}
+                            />
+                            <TextField
+                                className="textField"
+                                required
+                                error={shippingAddress.city.error}
+                                helperText={shippingAddress.city.error ? 'This field is required.' : ''}
+                                label="City"
+                                variant="standard"
+                                color="warning"
+                                value={shippingAddress.city.value}
+                                onChange={(e) => handleChange(e.target.value, 'city')}
+                            />
+                            <TextField
+                                className="textField"
+                                required
+                                error={shippingAddress.zipCode.error}
+                                helperText={shippingAddress.zipCode.error ? 'This field is required.' : ''}
+                                label="Zip/Postal Code"
+                                variant="standard"
+                                color="warning"
+                                value={shippingAddress.zipCode.value}
+                                onChange={(e) => handleChange(e.target.value, 'zipCode')}
+                            />
+                            <TextField
+                                className="textField"
+                                required
+                                error={shippingAddress.address.error}
+                                helperText={shippingAddress.address.error ? 'This field is required.' : ''}
+                                label="Address"
+                                variant="standard"
+                                color="warning"
+                                value={shippingAddress.address.value}
+                                onChange={(e) => handleChange(e.target.value, 'address')}
+                            />
                         </div>
                     </div>
                     <div className="cartShippingInfoContainer">
-                        <h3>Shipping Method</h3>
+                        <h3 className="cartShippingHeader">Shipping Method</h3>
                         <div className="cartShippingMethodContainer">
-                            <div className="cartShippingMethod">
-                                <span className="cartShippingMethodName">USPS</span>
-                                <span className="cartShippingMethodPrice">$5.00</span>
-                            </div>
-                            <div className="cartShippingMethodEditContainer">
-                                <Link href="/cart/shipping">
-                                    Edit
-                                </Link>
-                            </div>
+                            {!seeMore 
+                                ?
+                                <p>We've chosen to send your order via postal mail, a trusted and reliable method. Enjoy the convenience and security of having your package delivered right to your doorstep.</p>
+                                :
+                                <>
+                                    <p>Dear Valued Customers,</p>
+                                    <p>We are committed to providing you with the best and most reliable shipping option for your orders. Our chosen method for shipping is through trusted postal mail services. Here's what you can expect with postal mail as your shipping method:</p>
+                                    <p><strong>Security:</strong> We understand the importance of your orders arriving safely and securely. Postal mail is a tried-and-true method with a strong track record for the safe delivery of packages.</p>
+                                    <p><strong>Reliability:</strong> Postal services have a well-established network that ensures your package's timely delivery. You can count on us to get your order to you promptly.</p>
+                                    <p><strong>Convenience:</strong> Postal mail offers the convenience of delivering to your doorstep. You won't need to visit a courier office or take time off work to receive your package.</p>
+                                    <p><strong>Tracking:</strong> We provide tracking information vie email so you can monitor the progress of your order. You'll be kept informed every step of the way.</p>
+                                    <p>Rest assured, we take great care in packaging your orders to minimize any potential issues during transit.</p>
+                                    <p>Your satisfaction is our top priority, and we are confident that postal mail is a secure and efficient method for shipping your orders. If you have any questions or concerns about your shipment, please don't hesitate to reach out to our email: <strong>clenPeekPerformance@gmail.com</strong> .</p>
+                                    <p>Thank you for choosing us, and we look forward to serving you with a seamless and worry-free shipping experience.</p>
+                                    <p>Best regards,</p>
+                                    <p><strong>Clen Peek Performance</strong></p>
+
+                                </>
+                            }
+                            <span className="shippingMethodSeeMore" onClick={() => setSeeMore(prev => !prev)}>{!seeMore ? 'show more...' : '...show less'}</span>
                         </div>
                     </div>
                 </div>
+            );
+            case 2:
+            return(
+                <div className="cartShippingContainer">
+                    <h3 className="cartShippingHeader">Payment Method</h3>
+                    <div className="cartShippingInfoContainer">
+                        <div className="cartShippingMethodContainer">
+                            <p><strong>Convenient Cash on Delivery</strong></p>
+                            <p>Dear Valued Customers,</p>
+                            <p>We're pleased to offer you the convenience and peace of mind that comes with our preferred payment method: Cash on Delivery. Here are the benefits you can enjoy with this payment option:</p>
+                            <p><strong>Security:</strong> With Cash on Delivery, you only make payment when your order arrives at your doorstep. This ensures that you can inspect your order and be completely satisfied before parting with your money.</p>
+                            <p><strong>Hassle-Free:</strong> No need to share sensitive financial information online. Pay with cash upon delivery, making the payment process straightforward and worry-free.</p>
+                            <p><strong>Convenience:</strong> It's the ultimate convenience - just keep the exact amount of cash ready when your order arrives, and our delivery team will handle the rest.</p>
+                            <p><strong>Trustworthy:</strong> We value your trust, and Cash on Delivery demonstrates our commitment to your satisfaction and the quality of our products.</p>
+                            <p>Your peace of mind is our priority, and we are confident that Cash on Delivery is a secure and hassle-free payment method. If you have any questions or concerns about your payment, please don't hesitate to reach out to our email: <strong>clenPeekPerformance@gmail.com</strong> .</p>
+                            <p>Thank you for choosing us, and we look forward to providing you with a smooth and secure shopping experience.</p>
+                            <p>Best regards,</p>
+                            <p><strong>Clen Peek Performance</strong></p>
+                        </div>
+                        <div className="finalAndSavedMoneyContainer">
+                            <p className="finalAndSaved">Shipping Cost: <span className="shippingCost">$0.00</span></p>
+                            {savedMoney ? <p className="finalAndSaved">Money Saved: <span className="savedMoney">${savedMoney.toFixed(2)}</span></p> : <></>}
+                            {finalPrice ? <p className="finalAndSaved">Final Price: <span className="finalMoney">${finalPrice.toFixed(2)}</span></p> : <></>}
+                        </div>
+                    </div>
+                </div>
+
             );
         }
     };
@@ -119,8 +309,8 @@ function Cart() {
                 <div className="cartAllStepsContainer">
                     {renderStepContent(step)}
                     <div className="cartStepsButtonsContainer">
-                        <button onClick={() => setStep(prev => prev - 1)} className={`cartStepsButton cartStepsButtonBack ${!step && 'backButtonHidden'}`}>Back</button>
-                        <button onClick={() => setStep(prev => prev + 1)} className="cartStepsButton cartStepsButtonNext">Next</button>
+                        <button onClick={handleGoBack} className={`cartStepsButton cartStepsButtonBack ${!step && 'buttonHidden'}`}>Back</button>
+                        <button onClick={handleGoNext} className={`cartStepsButton cartStepsButtonNext ${isDisabled ? 'buttonDisabled' : ''} ${!finalPrice && 'buttonHidden'}`}>{step === 2 ? 'Finish Order' : 'Next'}</button>
                     </div>
                 </div>
             </div>

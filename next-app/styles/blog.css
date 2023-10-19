@@ -63,8 +63,30 @@ p {
     border-radius: 10px;
 }
 
+.imageInsideBlog {
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .imageInsideBlog {
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .youtubeVideo {
         height: 300px;
+    }
+
+    .imageInsideBlog {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imageInsideBlog {
+        width: 95%;
     }
 }

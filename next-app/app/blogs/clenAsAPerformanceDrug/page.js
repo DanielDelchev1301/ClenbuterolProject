@@ -3,6 +3,12 @@ import Product from '@/components/Product';
 import '../../../styles/blog.css'
 import Link from 'next/link';
 
+export const metadata = {
+    title: 'Clenbuterol as a Performance-Enhancing Drug: What You Need to Know',
+    description: 'In the world of sports and bodybuilding, athletes are continually seeking ways to gain a competitive edge. One substance that has garnered attention for its potential performance-enhancing properties is clenbuterol. But what is clenbuterol, and how does it impact athletic performance? In this article, we\'ll explore the use of clenbuterol as a performance-enhancing drug, its effects on the body, and the ethical and legal considerations surrounding its use.',
+    keywords: 'clenbuterol, buy clenbuterol, clenbuterol sopharma price, buy clenbuterol sopharma, clenbuterol sopharma, clenbuterol sopharma buy, clen sopharma buy, clenbuterol sopharma buy online'
+};
+
 function Blog() {
     return (
         <div className="blogMainContainer">

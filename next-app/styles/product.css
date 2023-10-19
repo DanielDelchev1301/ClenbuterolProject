@@ -73,3 +73,9 @@
 .learnMoreButton:hover {
     background-color: #f78e26;
 }
+
+@media screen and (max-width: 500px) {
+    .productContainer {
+        margin: 50px 0px;
+    }
+}
