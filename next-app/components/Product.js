@@ -58,6 +58,7 @@ function Product({
                 </Alert>
             </Collapse>
             <Image
+                title={alt}
                 src={src}
                 alt={alt} 
                 width={width} 
@@ -70,7 +71,7 @@ function Product({
             </div>
             <div className="productButtons">
                 <button onClick={addToBag} className="productButton addToCartButton">Add to Cart</button>
-                <button className="productButton learnMoreButton">Learn More</button>
+                <Link className="linkProductButton learnMoreButton" href={href}>Learn More</Link>
             </div>
         </div>
     );

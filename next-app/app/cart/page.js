@@ -57,13 +57,13 @@ function Cart() {
     }, []);
 
     useEffect(() => {
-        setIsDisabled((!shippingAddress.firstName.value.length || 
-            !shippingAddress.lastName.value.length || 
-            !shippingAddress.country.value.length || 
-            !shippingAddress.city.value.length || 
-            !shippingAddress.zipCode.value.length || 
-            !shippingAddress.address.value.length || 
-            !shippingAddress.email.value.length || 
+        setIsDisabled((!shippingAddress.firstName.value.trim().length || 
+            !shippingAddress.lastName.value.trim().length || 
+            !shippingAddress.country.value.trim().length || 
+            !shippingAddress.city.value.trim().length || 
+            !shippingAddress.zipCode.value.trim().length || 
+            !shippingAddress.address.value.trim().length || 
+            !shippingAddress.email.value.trim().length || 
             shippingAddress.email.error) &&
             step === 1
         );
@@ -107,7 +107,56 @@ function Cart() {
 
     const handleGoNext = () => {
         window.scrollTo({top: 300, behavior: 'smooth'});
-        setStep(prev => prev + 1)
+        
+        if (step == 2) {
+            setIsDisabled(true);
+            let products = [];
+            for (let key in cartProductsWithQuantity) {
+                products.push({
+                    heading: cartProductsWithQuantity[key].heading,
+                    price: cartProductsWithQuantity[key].price,
+                    quantity: cartProductsWithQuantity[key].quantity
+                });
+            }
+            const body = {
+                email: shippingAddress.email.value,
+                firstName: shippingAddress.firstName.value,
+                lastName: shippingAddress.lastName.value,
+                country: shippingAddress.country.value,
+                city: shippingAddress.city.value,
+                address: shippingAddress.address.value,
+                zipCode: shippingAddress.zipCode.value,
+                orderInfo: {
+                    products: products,
+                    finalPrice: finalPrice,
+                    date: new Date(),
+                    status: 'pending'
+                }
+            };
+
+            fetch('/api/order/createNew', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            })
+            .then(res => res.json())
+            .then(() => {
+                setStep(prev => prev + 1);
+                setCartProducts([]);
+                setCartProductsWithQuantity({});
+                window.localStorage.setItem('cart', []);
+                setIsDisabled(false);
+            })
+            .catch(err => {
+                console.error(err);
+                alert('Something went wrong, please try again later.');
+                setIsDisabled(false);
+            });
+        } else {
+            setStep(prev => prev + 1)
+        }
     };
 
     const handleChange = (value, name) => {
@@ -215,7 +264,7 @@ function Cart() {
                                 required
                                 error={shippingAddress.zipCode.error}
                                 helperText={shippingAddress.zipCode.error ? 'This field is required.' : ''}
-                                label="Zip/Postal Code"
+                                label="ZIP/Postal Code"
                                 variant="standard"
                                 color="warning"
                                 value={shippingAddress.zipCode.value}
@@ -244,15 +293,17 @@ function Cart() {
                                 <>
                                     <p>Dear Valued Customers,</p>
                                     <p>We are committed to providing you with the best and most reliable shipping option for your orders. Our chosen method for shipping is through trusted postal mail services. Here's what you can expect with postal mail as your shipping method:</p>
+                                    <p><strong>Shipping Cost:</strong> Enjoy <strong>FREE shipping</strong> as a special bonus. No extra costs when you meet certain conditions, like a minimum purchase. It's our way of making your shopping experience even better.</p>
+                                    <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our fast shipping option ensures that you receive your packages within just 3-4 days. It's a proven method for prompt and secure delivery.</p>
                                     <p><strong>Security:</strong> We understand the importance of your orders arriving safely and securely. Postal mail is a tried-and-true method with a strong track record for the safe delivery of packages.</p>
                                     <p><strong>Reliability:</strong> Postal services have a well-established network that ensures your package's timely delivery. You can count on us to get your order to you promptly.</p>
                                     <p><strong>Convenience:</strong> Postal mail offers the convenience of delivering to your doorstep. You won't need to visit a courier office or take time off work to receive your package.</p>
                                     <p><strong>Tracking:</strong> We provide tracking information vie email so you can monitor the progress of your order. You'll be kept informed every step of the way.</p>
                                     <p>Rest assured, we take great care in packaging your orders to minimize any potential issues during transit.</p>
-                                    <p>Your satisfaction is our top priority, and we are confident that postal mail is a secure and efficient method for shipping your orders. If you have any questions or concerns about your shipment, please don't hesitate to reach out to our email: <strong>clenPeekPerformance@gmail.com</strong> .</p>
+                                    <p>Your satisfaction is our top priority, and we are confident that postal mail is a secure and efficient method for shipping your orders. If you have any questions or concerns about your shipment, please don't hesitate to reach out to our email: <strong>clenpeakperformance@gmail.com</strong> .</p>
                                     <p>Thank you for choosing us, and we look forward to serving you with a seamless and worry-free shipping experience.</p>
                                     <p>Best regards,</p>
-                                    <p><strong>Clen Peek Performance</strong></p>
+                                    <p><strong>Clen peak Performance</strong></p>
 
                                 </>
                             }
@@ -274,10 +325,10 @@ function Cart() {
                             <p><strong>Hassle-Free:</strong> No need to share sensitive financial information online. Pay with cash upon delivery, making the payment process straightforward and worry-free.</p>
                             <p><strong>Convenience:</strong> It's the ultimate convenience - just keep the exact amount of cash ready when your order arrives, and our delivery team will handle the rest.</p>
                             <p><strong>Trustworthy:</strong> We value your trust, and Cash on Delivery demonstrates our commitment to your satisfaction and the quality of our products.</p>
-                            <p>Your peace of mind is our priority, and we are confident that Cash on Delivery is a secure and hassle-free payment method. If you have any questions or concerns about your payment, please don't hesitate to reach out to our email: <strong>clenPeekPerformance@gmail.com</strong> .</p>
+                            <p>Your peace of mind is our priority, and we are confident that Cash on Delivery is a secure and hassle-free payment method. If you have any questions or concerns about your payment, please don't hesitate to reach out to our email: <strong>clenpeakperformance@gmail.com</strong> .</p>
                             <p>Thank you for choosing us, and we look forward to providing you with a smooth and secure shopping experience.</p>
                             <p>Best regards,</p>
-                            <p><strong>Clen Peek Performance</strong></p>
+                            <p><strong>Clen peak Performance</strong></p>
                         </div>
                         <div className="finalAndSavedMoneyContainer">
                             <p className="finalAndSaved">Shipping Cost: <span className="shippingCost">$0.00</span></p>
@@ -287,6 +338,12 @@ function Cart() {
                     </div>
                 </div>
 
+            );
+            case 3:
+            return(
+                <div className="cartShippingContainer">
+                    <p className="completedOrderMessage">We are thrilled to inform you that your order has been successfully placed and confirmed. Thank you for choosing <strong>Clen Peak Preformance</strong> for your recent purchase.</p>
+                </div>
             );
         }
     };
@@ -308,10 +365,12 @@ function Cart() {
                 </Stepper>
                 <div className="cartAllStepsContainer">
                     {renderStepContent(step)}
-                    <div className="cartStepsButtonsContainer">
-                        <button onClick={handleGoBack} className={`cartStepsButton cartStepsButtonBack ${!step && 'buttonHidden'}`}>Back</button>
-                        <button onClick={handleGoNext} className={`cartStepsButton cartStepsButtonNext ${isDisabled ? 'buttonDisabled' : ''} ${!finalPrice && 'buttonHidden'}`}>{step === 2 ? 'Finish Order' : 'Next'}</button>
-                    </div>
+                    {step != 3 &&
+                        <div className="cartStepsButtonsContainer">
+                            <button onClick={handleGoBack} className={`cartStepsButton cartStepsButtonBack ${!step && 'buttonHidden'}`}>Back</button>
+                            <button onClick={handleGoNext} className={`cartStepsButton cartStepsButtonNext ${isDisabled ? 'buttonDisabled' : ''} ${!finalPrice && 'buttonHidden'}`}>{step === 2 ? 'Finish Order' : 'Next'}</button>
+                        </div>
+                    }
                 </div>
             </div>
             <div className="offerAdditionalProductsContainer">

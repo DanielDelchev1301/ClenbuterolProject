@@ -39,6 +39,12 @@ p {
     justify-content: space-around;
 }
 
+.blogLayoutProductsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .blogLinkButton {
     margin: 8px;
     padding: 14px;
@@ -63,10 +69,36 @@ p {
     border-radius: 10px;
 }
 
+.authorAndDate {
+    background-color: white;
+    margin: 20px 0px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+}
+
+.authorAndDate p {
+    color: grey;
+}
+
+.authorAndDate span {
+    color: orange;
+}
+
+.authorAndDate span:hover {
+    color: rgb(218, 141, 0);
+}
+
 .imageInsideBlog {
     width: 90%;
     height: 500px;
     border-radius: 10px;
+}
+
+.readMoreLink {
+    text-decoration: none;
+    color: orange;
 }
 
 @media screen and (max-width: 1200px) {

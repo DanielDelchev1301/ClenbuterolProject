@@ -3,9 +3,18 @@ import '@/styles/home.css'
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Clen Peak Performance: Your Trusted Source for Clenbuterol Information and Support',
-  description: 'Clen Peak Performance is a trusted source of information and support for individuals interested in the world of clenbuterol. Our mission is to promote safety, knowledge, and responsible choices. We aim to educate, emphasizing the potential risks and legal considerations while providing valuable insights for those considering clenbuterol. We strive to be a beacon of integrity, guiding you towards better-informed decisions that prioritize health, well-being, and compliance with regulations.',
-  keywords: 'clenbuterol, buy clenbuterol, clenbuterol sopharma price, buy clenbuterol sopharma, clenbuterol sopharma, clenbuterol sopharma buy, clen sopharma buy, clenbuterol sopharma buy online'
+  title: 'Ultimate Clenbuterol Guide: Clen Info and Support',
+  description: 'Explore clenbuterol safely with us. Get info, stay informed, and make responsible choices. Prioritize health and legal compliance.',
+  keywords: 'clenbuterol information, clenbuterol support, buy clenbuterol, buy clen, clenbuterol sopharma,',
+  openGraph: {
+    title: 'home',
+    type: 'website',
+    images: ['http://localhost:3000/fintessGoalsImage.jpg'],
+    url: 'http://localhost:3000/',
+  },
+  alternates: {
+    canonical: 'http://localhost:3000/',
+  }
 };
 
 function Home() {
@@ -34,7 +43,7 @@ function Home() {
         <div className="productsContainer">
           <Product 
             src="/clenSopharmaFiveBoxesWatermark.jpg"
-            alt="clenSoptharmaFiveBoxes" 
+            alt="clenSopharmaFiveBoxes" 
             width="300" 
             height="300"
             href="/shop/clenFiveBoxes"
@@ -45,7 +54,7 @@ function Home() {
           />
           <Product 
             src="/clenSopharmaOneBoxWatermark.jpg"
-            alt="clenSopharmaOneBox" 
+            alt="clenSopharmaThreeBox" 
             width="300" 
             height="300"
             href="/shop/clenThreeBoxes"
@@ -66,12 +75,15 @@ function Home() {
           <Link href="/blogs/clenLegalStatus" className="blogLinkButton">Legal Status of Clenbuterol: A Global Perspective</Link>
           <Link href="/blogs/clenMisuseAndAbuse" className="blogLinkButton">Misuse and Abuse of Clenbuterol: Risks and Consequences</Link>
           <Link href="/blogs/clenHealthRisks" className="blogLinkButton">Clenbuterol Health Risks: What You Need to Know</Link>
-          <Link href="/blogs/clenTestingAndDetection" className="blogLinkButton">Clenbuterol Testing and Detection: What Athletes and Users Should Know</Link>
+          <Link href="/blogs/clenTestingAndDetection" className="blogLinkButton">Clenbuterol Testing & Detection: What Everyone Should Know</Link>
         </div>
       </div>
+      <iframe className="youtubeVideoHomePage"
+        src="https://www.youtube.com/embed/mFw4FcCt_Eo?si=LIGN3_YAqg_Pc1Kp">
+      </iframe>
       <div className="homeFlexContainer">
         <div className="blogLinksContainer">
-          <Link href="/blogs/clenAlternatives" className="blogLinkButton">Alternatives to Clenbuterol in Bodybuilding: Safe and Effective Options</Link>
+          <Link href="/blogs/clenAlternatives" className="blogLinkButton">Safe & Effective Bodybuilding Alternatives to Clen</Link>
           <Link href="/blogs/clenConsultation" className="blogLinkButton">Consultation with a Healthcare Professional: Essential in Bodybuilding</Link>
           <Link href="/blogs/clenEthicalConsiderations" className="blogLinkButton">Ethical Considerations of Clenbuterol Use in Bodybuilding</Link>
         </div>

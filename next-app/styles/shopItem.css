@@ -1,0 +1,24 @@
+.shopItemMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.shopItemMainContainer h4 {
+    letter-spacing: 0.5px;
+    color: orange;
+}
+
+.shopItemMainContainer p {
+    letter-spacing: 0.5px;
+    font-size: 19px;
+}
+
+.relatedProductsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

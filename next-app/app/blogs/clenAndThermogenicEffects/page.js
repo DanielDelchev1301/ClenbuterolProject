@@ -5,8 +5,17 @@ import Image from 'next/image';
 
 export const metadata = {
     title: 'Clenbuterol and Thermogenic Effects: A Closer Look',
-    description: 'In the world of bodybuilding and fitness, athletes often explore various compounds and strategies to enhance their training results. One substance that has been a topic of discussion is clenbuterol, known for its thermogenic properties. In this article, we\'ll delve into clenbuterol\'s thermogenic effects and its implications for bodybuilding and overall health.',
-    keywords: 'buy clenbuterol sopharma, clenbuterol sopharma price, clenbuterol thermogenic effects, clenbuterol thermogenic properties, clenbuterol fat burner,'
+    description: 'Unlock the secrets of Clenbuterol\'s thermogenic power in fitness and bodybuilding. Elevate your workouts while prioritizing your well-being.',
+    keywords: 'does clenbuterol really burn fat, clenbuterol thermogenic effects, does clenbuterol cut fat',
+    openGraph: {
+        title: 'clenAndThermogenicEffects',
+        type: 'article',
+        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
+        url: 'http://localhost:3000/blogs/clenAndThermogenicEffects',
+    },
+    alternates: {
+        canonical: 'http://localhost:3000/blogs/clenAndThermogenicEffects',
+    }
 };
 
 function Blog() {
@@ -37,6 +46,7 @@ function Blog() {
             />
             <h4>Increased Core Temperature</h4>
             <Image
+                title="increasedCoreTemperature"
                 src="/increasedCoreTemperature.jpg"
                 alt="increasedCoreTemperature" 
                 width={300}
@@ -52,6 +62,7 @@ function Blog() {
             <p>Clenbuterol's thermogenic effects have implications for both bodybuilding and overall health. Let's explore these aspects in detail.</p>
             <h4>Bodybuilding</h4>
             <Image
+                title="bodybuildingImage"
                 src="/bodybuildingImage.jpg"
                 alt="bodybuildingImage" 
                 width={300}
@@ -67,6 +78,11 @@ function Blog() {
             <p>Clenbuterol's thermogenic effects are a topic of interest in the realms of bodybuilding and fitness. While it has potential benefits for fat loss and metabolism, it comes with associated risks, especially concerning cardiovascular health. Furthermore, its use in competitive sports is often met with stringent regulations.</p>
             <p>It's essential for individuals to make informed and responsible choices when considering the use of clenbuterol or any other thermogenic agents. Prioritizing overall health and adhering to the legal and ethical standards of sports organizations is of utmost importance.</p>
             <p>Ultimately, successful bodybuilding and a healthy lifestyle are built on a foundation of balanced nutrition, proper training, and dedication. While thermogenic agents like clenbuterol may offer some assistance, they should never replace the fundamental principles of health and fitness.</p>
+            <Link className="readMoreLink" href="https://rucore.libraries.rutgers.edu/rutgers-lib/41219/PDF/1/play/#:~:text=As%20a%20sympathomimetic%20and%20Beta,respiratory%20efficiency%20while%20reducing%20fat.">Read more about this topic.</Link>
+            <div className="authorAndDate">
+                <p>Author: <span>John Freedman</span></p>
+                <p>Date: <span>2023-08-12</span></p>
+            </div>
         </div>
     );
 }

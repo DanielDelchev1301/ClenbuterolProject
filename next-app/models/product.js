@@ -29,9 +29,36 @@ const ProductSchema = new Schema({
         type: String,
         required: [true, 'Zip/Postal code is required'],
     },
-    mobilePhone: {
-        type: String,
-    },
+    orderInfo: {
+        products: [
+            {
+                heading: {
+                    type: String,
+                    required: [true, 'Heading is required'],
+                },
+                price: {
+                    type: String,
+                    required: [true, 'Price is required'],
+                },
+                quantity: {
+                    type: String,
+                    required: [true, 'Quantity is required'],
+                },
+            }
+        ],
+        finalPrice: {
+            type: String,
+            required: [true, 'Final price is required'],
+        },
+        date: {
+            type: Date,
+            required: [true, 'Date is required'],
+        },
+        status: {
+            type: String,
+            required: [true, 'Status is required'],
+        },
+    }
 });
 
 const Product = models.Product || model('Product', ProductSchema);

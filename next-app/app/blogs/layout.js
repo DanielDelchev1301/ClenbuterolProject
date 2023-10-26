@@ -11,12 +11,12 @@ function BlogLayout({ children }) {
           <Link href="/blogs/clenLegalStatus" className="blogLinkButton">Legal Status of Clenbuterol: A Global Perspective</Link>
           <Link href="/blogs/clenMisuseAndAbuse" className="blogLinkButton">Misuse and Abuse of Clenbuterol: Risks and Consequences</Link>
           <Link href="/blogs/clenHealthRisks" className="blogLinkButton">Clenbuterol Health Risks: What You Need to Know</Link>
-          <Link href="/blogs/clenTestingAndDetection" className="blogLinkButton">Clenbuterol Testing and Detection: What Athletes and Users Should Know</Link>
+          <Link href="/blogs/clenTestingAndDetection" className="blogLinkButton">Clenbuterol Testing & Detection: What Everyone Should Know</Link>
         </div>
         <div className="blogLayoutProductsContainer">
           <Product 
             src="/clenSopharmaOneBoxWatermark.jpg"
-            alt="clenSopharmaOneBox" 
+            alt="clenSopharmaThreeBox" 
             width="300" 
             height="300"
             href="/shop/clenThreeBoxes"
@@ -51,7 +51,7 @@ function BlogLayout({ children }) {
           />
 
           <div className="blogLinksContainer">
-            <Link href="/blogs/clenAlternatives" className="blogLinkButton">Alternatives to Clenbuterol in Bodybuilding: Safe and Effective Options</Link>
+            <Link href="/blogs/clenAlternatives" className="blogLinkButton">Safe & Effective Bodybuilding Alternatives to Clen</Link>
             <Link href="/blogs/clenConsultation" className="blogLinkButton">Consultation with a Healthcare Professional: Essential in Bodybuilding</Link>
             <Link href="/blogs/clenEthicalConsiderations" className="blogLinkButton">Ethical Considerations of Clenbuterol Use in Bodybuilding</Link>
           </div>

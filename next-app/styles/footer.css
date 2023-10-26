@@ -3,9 +3,10 @@
     flex-wrap: wrap;
     bottom: 0px;
     position: relative;
-    height: 500px;
+    min-height: 500px;
     background-color: #121521;
     color: white;
+    margin-top: 50px;
 }
 
 .footerContainer h3, .footerContainer p {
@@ -42,4 +43,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.allArticlesAreBased {
+    font-style: italic;
+    font-size: 12px;
+    width: 90%;
+}
+
+.termsAndPrivacyLinks{
+    text-decoration: none;
+    color: #F79633;
+    margin: 5px;
+}
+
+@media screen and (max-width: 400px) {
+    .iconFooter {
+        font-size: 60px;
+    }
+    
+    .footerIconText {
+        font-size: 25px;
+    }
 }

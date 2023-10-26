@@ -1,0 +1,123 @@
+.adminMainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.adminMainContainer h2 {
+    margin: 50px;
+    color: orange;
+}
+
+.adminOrdersContainer {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.adminOrderContainer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+.adminOrderContainer p {
+    opacity: 0.7;
+}
+
+.adminOrderContainer p span {
+    font-weight: 600;
+}
+
+.adminOrderPreview {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.pending {
+    border-right: 15px solid rgb(110, 110, 110);
+}
+
+.shipped {
+    border-right: 15px solid rgb(255, 209, 123);
+}
+
+.delivered {
+    border-right: 15px solid rgb(174, 255, 99);
+}
+
+.adminOrderProduct {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    background: #e9ffe9;
+    margin: 10px 0px
+}
+
+.adminOrderInfo .editModeButton {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    background-color: white;
+    color: orange;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttonNoAction {
+    pointer-events: none;
+}
+
+.copyButton {
+    margin: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #35a7d3;
+    background-color: white;
+    color: #35a7d3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.copyButton:hover {
+    border: 2px solid #0fa6e2;
+    color: #0fa6e2;
+}
+
+/* adminLogin */
+
+.adminLoginContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    align-items: center;
+}
+
+.adminLoginInput {
+    width: 70%;
+}
+
+.adminLoginButton {
+    font-size: 18px;
+    width: 70%;
+    padding: 10px;
+    font-weight: 600;
+    background: white;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+}

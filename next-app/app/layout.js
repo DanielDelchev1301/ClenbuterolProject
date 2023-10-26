@@ -2,6 +2,10 @@ import Footer from '@/components/Footer';
 import Nav from '@/components/Nav'
 import '@/styles/global.css'
 
+export const metadata = {
+  robots: 'index, follow'
+};
+
 function RootLayout({ children }) {
   return (
     <html lang="en">

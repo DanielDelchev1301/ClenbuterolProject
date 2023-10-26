@@ -1,0 +1,19 @@
+.contactUsMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+}
+
+.contactUsMainContainer h2 {
+    color: #F79633;
+}
+
+.contactUsEmailLink{
+    text-decoration: none;
+    color: #F79633;
+    margin: 5px;
+}

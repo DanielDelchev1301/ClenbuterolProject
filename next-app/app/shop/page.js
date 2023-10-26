@@ -2,6 +2,21 @@ import Product from "@/components/Product";
 import '../../styles/shop.css';
 import Link from "next/link";
 
+export const metadata = {
+    title: 'Ultimate Clenbuterol Guide: Clen Info and Support',
+    description: 'Explore clenbuterol safely with us. Get info, stay informed, and make responsible choices. Prioritize health and legal compliance.',
+    keywords: 'clenbuterol information, clenbuterol support, buy clenbuterol, buy clenbuterol sopharma, free shipping clenbuterol',
+    openGraph: {
+        title: 'shop',
+        type: 'website',
+        images: ['http://localhost:3000/clenSopharmaOneBoxWatermark.jpg'],
+        url: 'http://localhost:3000/shop',
+    },
+    alternates: {
+      canonical: 'http://localhost:3000/shop',
+    }
+};
+
 function Shop() {
     return (
         <div className="shopMainContainer">
@@ -10,7 +25,7 @@ function Shop() {
                 <div className="shopProductsContainer">
                     <Product
                         src="/clenSopharmaFiveBoxesWatermark.jpg"
-                        alt="clenSoptharmaFiveBoxes" 
+                        alt="clenSopharmaFiveBoxes" 
                         width="300" 
                         height="300"
                         href="/shop/clenFiveBoxes"
@@ -21,7 +36,7 @@ function Shop() {
                     />
                     <Product 
                         src="/clenSopharmaOneBoxWatermark.jpg"
-                        alt="clenSopharmaOneBox" 
+                        alt="clenSopharmaThreeBox" 
                         width="300" 
                         height="300"
                         href="/shop/clenThreeBoxes"
@@ -35,11 +50,11 @@ function Shop() {
                         alt="clenSopharmaOneBox" 
                         width="300" 
                         height="300"
-                        href="/shop/clenThreeBoxes"
-                        heading="Clenbuterol 150 tabs (3x50 tabs) / 0,02 mg"
-                        oldPrice="$150.00"
-                        price="$120.00"
-                        title="clenSopharmaThreeBox"
+                        href="/shop/clenOneBox"
+                        heading="Clenbuterol 50 tabs / 0,02 mg"
+                        oldPrice={false}
+                        price="$50.00"
+                        title="clenSopharmaOneBox"
                     />
                     <Product 
                         src="/ketotifenSopharmaWatermark.jpg"
@@ -86,15 +101,17 @@ function Shop() {
                 <h3>Shipping Details</h3>
                 <p>Dear Valued Customers,</p>
                 <p>We are committed to providing you with the best and most reliable shipping option for your orders. Our chosen method for shipping is through trusted postal mail services. Here's what you can expect with postal mail as your shipping method:</p>
+                <p><strong>Shipping Cost:</strong> Enjoy <strong>FREE shipping</strong> as a special bonus. No extra costs when you meet certain conditions, like a minimum purchase. It's our way of making your shopping experience even better.</p>
+                <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our fast shipping option ensures that you receive your packages within just 3-4 days. It's a proven method for prompt and secure delivery.</p>
                 <p><strong>Security:</strong> We understand the importance of your orders arriving safely and securely. Postal mail is a tried-and-true method with a strong track record for the safe delivery of packages.</p>
                 <p><strong>Reliability:</strong> Postal services have a well-established network that ensures your package's timely delivery. You can count on us to get your order to you promptly.</p>
                 <p><strong>Convenience:</strong> Postal mail offers the convenience of delivering to your doorstep. You won't need to visit a courier office or take time off work to receive your package.</p>
                 <p><strong>Tracking:</strong> We provide tracking information vie email so you can monitor the progress of your order. You'll be kept informed every step of the way.</p>
                 <p>Rest assured, we take great care in packaging your orders to minimize any potential issues during transit.</p>
-                <p>Your satisfaction is our top priority, and we are confident that postal mail is a secure and efficient method for shipping your orders. If you have any questions or concerns about your shipment, please don't hesitate to reach out to our email: <strong>clenPeekPerformance@gmail.com</strong> .</p>
+                <p>Your satisfaction is our top priority, and we are confident that postal mail is a secure and efficient method for shipping your orders. If you have any questions or concerns about your shipment, please don't hesitate to reach out to our email: <strong>clenpeakperformance@gmail.com</strong> .</p>
                 <p>Thank you for choosing us, and we look forward to serving you with a seamless and worry-free shipping experience.</p>
                 <p>Best regards,</p>
-                <p><strong>Clen Peek Performance</strong></p>
+                <p><strong>Clen Peak Performance</strong></p>
             </div>
         </div>
     );

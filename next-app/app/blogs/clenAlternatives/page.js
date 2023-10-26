@@ -3,16 +3,25 @@ import '../../../styles/blog.css'
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Alternatives to Clenbuterol in Bodybuilding: Safe and Effective Options',
-    description: 'Bodybuilding and fitness enthusiasts often seek supplements and compounds to enhance their performance and help achieve their goals. Clenbuterol, a popular choice for its thermogenic and muscle-sparing properties, has limitations and potential health risks. If you\'re looking for alternatives to clenbuterol, this guide explores safe and effective options to support your bodybuilding journey without compromising your health or well-being.',
-    keywords: 'clenbuterol, buy clenbuterol, clenbuterol sopharma price, buy clenbuterol sopharma, clenbuterol sopharma, alternative of clenbuterol'
+    title: 'Safe & Effective Bodybuilding Alternatives to Clen',
+    description: 'Explore safe, effective alternatives to Clenbuterol in bodybuilding. Enhance performance without compromising health or well-being.',
+    keywords: 'is clenbuterol use associated with health risks, is clenbuterol preserving lean muscle, can clenbuterol increase metabolic rate, clenbuterol side effects',
+    openGraph: {
+        title: 'clenAlternatives',
+        type: 'article',
+        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
+        url: 'http://localhost:3000/blogs/clenAlternatives',
+    },
+    alternates: {
+        canonical: 'http://localhost:3000/blogs/clenAlternatives',
+    }
 };
 
 function Blog() {
     return (
         <div className="blogMainContainer">
 
-            <h2>Alternatives to Clenbuterol in Bodybuilding: Safe and Effective Options</h2>
+            <h2>Safe & Effective Bodybuilding Alternatives to Clen</h2>
             <Link href="#appealOfClen" className="linkToDifferentPartsOfTheBlog">The Appeal of Clenbuterol</Link>
             <Link href="#concernsWithClen" className="linkToDifferentPartsOfTheBlog">The Concerns with Clenbuterol</Link>
             <Link href="#safeAndEffectiveAlternatives" className="linkToDifferentPartsOfTheBlog">Safe and Effective Alternatives</Link>
@@ -65,6 +74,11 @@ function Blog() {
             <p>If you have any underlying medical conditions or concerns about potential interactions with other medications or supplements you're taking, consult a healthcare professional. They can provide personalized guidance on selecting the right alternative for your needs.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>While clenbuterol may offer appealing benefits for bodybuilders and athletes, it comes with potential health risks and legal complexities. Exploring safe and legal alternatives is a prudent choice to support your fitness goals without compromising your health or well-being. Consider your goals, health, and legal considerations when selecting the right alternative, and always prioritize safety and effectiveness in your bodybuilding journey.</p>
+            <Link className="readMoreLink" href="https://fitnessgraft.com/clenbuterol-alternatives/">Read more about this topic.</Link>
+            <div className="authorAndDate">
+                <p>Author: <span>Mike Smith</span></p>
+                <p>Date: <span>2023-08-20</span></p>
+            </div>
         </div>
     );
 }

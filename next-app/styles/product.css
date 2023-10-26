@@ -58,6 +58,19 @@
     cursor: pointer;
 }
 
+.linkProductButton {
+    text-decoration: none;
+    color: white;
+    background-color: #F79633;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
 .addToCartButton {
     background-color: #9cfa9c;
 }

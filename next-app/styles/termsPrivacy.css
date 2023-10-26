@@ -1,0 +1,10 @@
+.termsMainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.termsMainContainer h2 {
+    color: #F79633;
+}

@@ -4,15 +4,24 @@ import '../../../styles/blog.css'
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Clenbuterol as a Performance-Enhancing Drug: What You Need to Know',
-    description: 'In the world of sports and bodybuilding, athletes are continually seeking ways to gain a competitive edge. One substance that has garnered attention for its potential performance-enhancing properties is clenbuterol. But what is clenbuterol, and how does it impact athletic performance? In this article, we\'ll explore the use of clenbuterol as a performance-enhancing drug, its effects on the body, and the ethical and legal considerations surrounding its use.',
-    keywords: 'clenbuterol, buy clenbuterol, clenbuterol sopharma price, buy clenbuterol sopharma, clenbuterol sopharma, clenbuterol sopharma buy, clen sopharma buy, clenbuterol sopharma buy online'
+    title: 'Clen as a Performance-Enhancing Drug: What You Need to Know',
+    description: 'Discover clenbuterol\'s performance-enhancing effects in sports and bodybuilding. Effects, ethics, and legality explored.',
+    keywords: 'what is clenbuterol, fat loss with clenbuterol, endurance with clenbuterol, buy clenbuterol sopharma',
+    openGraph: {
+        title: 'clenAsAPerformanceDrug',
+        type: 'article',
+        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
+        url: 'http://localhost:3000/blogs/clenAsAPerformanceDrug',
+    },
+    alternates: {
+        canonical: 'http://localhost:3000/blogs/clenAsAPerformanceDrug',
+    }
 };
 
 function Blog() {
     return (
         <div className="blogMainContainer">
-            <h2>Clenbuterol as a Performance-Enhancing Drug: What You Need to Know</h2>
+            <h2>Clen as a Performance-Enhancing Drug: What You Need to Know</h2>
             <Link href="#whatIsCLen" className="linkToDifferentPartsOfTheBlog">What is Clenbuterol?</Link>
             <Link href="#clenAndAthletic" className="linkToDifferentPartsOfTheBlog">Clenbuterol and Athletic Performance</Link>
             <Link href="#cleUseInSports" className="linkToDifferentPartsOfTheBlog">Clenbuterol Use in Sports</Link>
@@ -71,6 +80,11 @@ function Blog() {
                 Before even contemplating the use of clenbuterol, athletes should consult with medical professionals and adhere to the rules and regulations of their respective sports organizations. Ultimately, achieving excellence in sports should be a pursuit that prioritizes health, integrity, and fairness for all competitors.
                 In conclusion, while clenbuterol may offer potential benefits, it is a path fraught with risks and challenges that athletes must carefully consider before choosing to walk it.
             </p>
+            <Link className="readMoreLink" href="https://www.webmd.com/pain-management/what-you-need-to-know-about-clenbuterol-for-bodybuilding">Read more about this topic.</Link>
+            <div className="authorAndDate">
+                <p>Author: <span>Carlos Esteban</span></p>
+                <p>Date: <span>2023-04-04</span></p>
+            </div>
         </div>
     );
 }
