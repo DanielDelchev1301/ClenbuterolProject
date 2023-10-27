@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Clen as a Performance-Enhancing Drug: What You Need to Know',
     description: 'Discover clenbuterol\'s performance-enhancing effects in sports and bodybuilding. Effects, ethics, and legality explored.',
-    keywords: 'what is clenbuterol, fat loss with clenbuterol, endurance with clenbuterol, buy clenbuterol sopharma',
+    keywords: 'what is clenbuterol, fat loss with clenbuterol, endurance with clenbuterol, buy clenbuterol sopharma, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenAsAPerformanceDrug',
         type: 'article',

@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Consult with a Healthcare Pro: Vital for Bodybuilding',
     description: 'To excel in bodybuilding, consult healthcare pros for essential guidance and regular support. Optimize your performance wisely.',
-    keywords: 'why is consultation important in health, what is the purpose of the consultation, what are the benefits of consultation model, consultation for clenbuterol',
+    keywords: 'why is consultation important in health, what is the purpose of the consultation, what are the benefits of consultation model, consultation for clenbuterol, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenConsultation',
         type: 'article',

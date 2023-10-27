@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Misuse and Abuse of Clenbuterol: Risks and Consequences',
     description: 'Misuse and Abuse of Clenbuterol: Uncovering Dangers, Motives, and Consequences in the Fitness and Bodybuilding World.',
-    keywords: 'what happens if you take too much clenbuterol, do people abuse clenbuterol, reasons behind abuse of clenbuterol, how does CLEN make you feel',
+    keywords: 'what happens if you take too much clenbuterol, do people abuse clenbuterol, reasons behind abuse of clenbuterol, how does CLEN make you feel, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenMisuseAndAbuse',
         type: 'article',

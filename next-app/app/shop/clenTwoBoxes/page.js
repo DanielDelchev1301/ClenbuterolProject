@@ -4,7 +4,7 @@ import '../../../styles/shopItem.css';
 export const metadata = {
     title: 'Clenbuterol 250 tabs / 0,02 mg | Buy Clenbuterol Online',
     description: 'Buy original Sopharma Clenbuterol online! Get 250 tabs with FAST and RELIABLE shipping in Europe, and enjoy CASH ON DELIVERY payment method.',
-    keywords: 'buy clenbuterol online, buy clenbuterol, buy clenbuterol sopharma, fast shipping clenbuterol, cash on delivery clenbuterol, clenbuterol sopharma, clenbuterol kaufen, clenbuterol sopharma kaufen',
+    keywords: 'buy clenbuterol online, buy clenbuterol, buy clenbuterol sopharma, fast shipping clenbuterol, cash on delivery clenbuterol, clenbuterol sopharma, clenbuterol kaufen, clenbuterol sopharma kaufen, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenSopharmaFiveBoxes',
         type: 'website',

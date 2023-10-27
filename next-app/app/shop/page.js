@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
     title: 'Ultimate Clenbuterol Guide: Clen Info and Support',
     description: 'Explore clenbuterol safely with us. Get info, stay informed, and make responsible choices. Prioritize health and legal compliance.',
-    keywords: 'clenbuterol information, clenbuterol support, buy clenbuterol, buy clenbuterol sopharma, fast shipping clenbuterol',
+    keywords: 'clenbuterol information, clenbuterol support, buy clenbuterol, buy clenbuterol sopharma, fast shipping clenbuterol, eca clen t3, clenbuterol',
     openGraph: {
         title: 'shop',
         type: 'website',

@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Stacking Clenbuterol with Other Compounds: Strategies',
     description: 'Elevating Fitness with Clenbuterol Stacks: Strategies for Combining Compounds to Optimize Results in Your Journey.',
-    keywords: 'what not to mix with clenbuterol, what should you take with clenbuterol, common compounds stacked with clenbuterol, considerations for stacking clenbuterol, clenbuterol and other compounds',
+    keywords: 'what not to mix with clenbuterol, what should you take with clenbuterol, common compounds stacked with clenbuterol, considerations for stacking clenbuterol, clenbuterol and other compounds, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenWithOtherCompounds',
         type: 'article',

@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Legal Status of Clenbuterol: A Global Perspective',
     description: 'Exploring Clenbuterol\'s Global Legal Status: Availability, Restrictions, and Considerations in Fitness and Bodybuilding.',
-    keywords: 'is clenbuterol Legal in Europe, what countries is clenbuterol legal in, is clenbuterol legal to use, is clenbuterol legal for veterinary use, is clenbuerol legal for research purposes',
+    keywords: 'is clenbuterol Legal in Europe, what countries is clenbuterol legal in, is clenbuterol legal to use, is clenbuterol legal for veterinary use, is clenbuerol legal for research purposes, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenLegalStatus',
         type: 'article',

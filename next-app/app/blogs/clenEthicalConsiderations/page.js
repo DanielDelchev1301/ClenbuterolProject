@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Ethical Considerations of Clenbuterol Use in Bodybuilding',
     description: 'Exploring Ethical Aspects of Clenbuterol in Bodybuilding - Insights into Responsible and Moral Practices in the Sport.',
-    keywords: 'is it OK to take clenbuterol, can clenbuterol affect male fertility, clenbuterol affects over fertility',
+    keywords: 'is it OK to take clenbuterol, can clenbuterol affect male fertility, clenbuterol affects over fertility, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenEthicalConsiderations',
         type: 'article',

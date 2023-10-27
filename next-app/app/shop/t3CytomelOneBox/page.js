@@ -4,7 +4,7 @@ import '../../../styles/shopItem.css';
 export const metadata = {
     title: 'T3 Cytomel 30 tabs / 0,025 mg | Buy Clenbuterol Online',
     description: 'Buy original UNI-PHARMA T3 Cytomel online! Get 30 tabs with FAST and RELIABLE shipping in Europe, and enjoy CASH ON DELIVERY payment method.',
-    keywords: 'buy t3 online, buy t3 cytomel, buy t3 cytomel uni-pharma, fast shipping t3, cash on delivery t3 cytomel, t3 uni-pharma',
+    keywords: 'buy t3 online, buy t3 cytomel, buy t3 cytomel uni-pharma, fast shipping t3, cash on delivery t3 cytomel, t3 uni-pharma, eca clen t3, clenbuterol',
     openGraph: {
         title: 't3CytomelWatermark',
         type: 'website',

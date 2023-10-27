@@ -4,7 +4,7 @@ import '../../../styles/shopItem.css';
 export const metadata = {
     title: 'Ketotifen 30 tabs / 1 mg | Buy Clenbuterol Online',
     description: 'Buy original Sopharma Clenbuterol online! Get 150 tabs with FAST and RELIABLE shipping in Europe, and enjoy CASH ON DELIVERY payment method.',
-    keywords: 'buy clenbuterol online, buy clenbuterol, buy clenbuterol sopharma, fast shipping clenbuterol, cash on delivery clenbuterol, clenbuterol sopharma',
+    keywords: 'buy clenbuterol online, buy clenbuterol, buy clenbuterol sopharma, fast shipping clenbuterol, cash on delivery clenbuterol, clenbuterol sopharma, eca clen t3, clenbuterol',
     openGraph: {
         title: 'ketotifenSopharma',
         type: 'website',

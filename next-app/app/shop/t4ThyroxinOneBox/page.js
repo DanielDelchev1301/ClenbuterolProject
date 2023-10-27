@@ -4,7 +4,7 @@ import '../../../styles/shopItem.css';
 export const metadata = {
     title: 'T4 L-Thyroxine 100 tabs / 0.1 mg | Buy Clenbuterol Online',
     description: 'Buy original BERLIN-CHEMIE T4 L-Thyroxin online! Get 100 tabs with FAST and RELIABLE shipping in Europe, and enjoy CASH ON DELIVERY payment method.',
-    keywords: 'buy t4 online, buy t4 l-thyroxin, buy t4 l-thyroxin berlin-chemie, fast shipping t4, cash on delivery t4 l-thyroxin, t4 berlin-chemie',
+    keywords: 'buy t4 online, buy t4 l-thyroxin, buy t4 l-thyroxin berlin-chemie, fast shipping t4, cash on delivery t4 l-thyroxin, t4 berlin-chemie, eca clen t3, clenbuterol',
     openGraph: {
         title: 't4ThyroxinWatermark',
         type: 'website',

@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Clenbuterol Dosing Protocols: Safe and Effective Use',
     description: 'Mastering clenbuterol dosing is vital for maximizing benefits and minimizing side effects in your fitness journey. Learn safe protocols here.',
-    keywords: 'how many mg of Clenbuterol should I take a day, is 40mg of Clenbuterol too much, what time should I take Clenbuterol for fat loss, should you take Clenbuterol everyday, clenbuterol dosage',
+    keywords: 'how many mg of Clenbuterol should I take a day, is 40mg of Clenbuterol too much, what time should I take Clenbuterol for fat loss, should you take Clenbuterol everyday, clenbuterol dosage, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenDosingProtocols',
         type: 'article',

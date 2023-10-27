@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Clenbuterol Side Effects: What You Need to Know',
     description: 'Diving into Clenbuterol Side Effects: Essential Knowledge for Safe and Effective Fitness and Bodybuilding.',
-    keywords: 'potential clenbuterol side effects, is clenbuterol increase hearth rate, is clenbuterol cause insomnia, is clenbuterol increase blood pressure, is clenbuterol suppress appetite, clenbuterol side effects',
+    keywords: 'potential clenbuterol side effects, is clenbuterol increase hearth rate, is clenbuterol cause insomnia, is clenbuterol increase blood pressure, is clenbuterol suppress appetite, clenbuterol side effects, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenSideEffects',
         type: 'article',

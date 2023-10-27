@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'The Ultimate Bodybuilding Guide For Muscle Mass',
     description: 'Discover the essentials of effective fat loss in this comprehensive guide to achieving your weight management goals.',
-    keywords: 'what are the best 5 exercises for muscle mass, does nutrition affect muscle growth, how much rest is good for muscle growth, guide for muscle mass',
+    keywords: 'what are the best 5 exercises for muscle mass, does nutrition affect muscle growth, how much rest is good for muscle growth, guide for muscle mass, eca clen t3, clenbuterol',
     openGraph: {
         title: 'ultimateGuideForMuscleMass',
         type: 'article',

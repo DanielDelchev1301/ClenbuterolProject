@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Safe & Effective Bodybuilding Alternatives to Clen',
     description: 'Explore safe, effective alternatives to Clenbuterol in bodybuilding. Enhance performance without compromising health or well-being.',
-    keywords: 'what to use with clenbuterol, clenbuterol alternatives, safe and effective alternatives to clenbuterol, clenbuterol concerns',
+    keywords: 'what to use with clenbuterol, clenbuterol alternatives, safe and effective alternatives to clenbuterol, clenbuterol concerns, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenAlternatives',
         type: 'article',

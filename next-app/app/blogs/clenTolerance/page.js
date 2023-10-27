@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Clenbuterol Tolerance: Understanding and Managing It',
     description: 'Unlocking Clenbuterol Tolerance: Causes and Management for Optimized Results in Fitness and Bodybuilding.',
-    keywords: 'why does clenbuterol tolerance occur, what is clenbuterol tolerance, how to recognize clenbuterol tolerance, how to manage clenbuterol tolerance',
+    keywords: 'why does clenbuterol tolerance occur, what is clenbuterol tolerance, how to recognize clenbuterol tolerance, how to manage clenbuterol tolerance, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenTolerance',
         type: 'article',

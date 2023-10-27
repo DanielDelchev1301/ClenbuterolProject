@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Clenbuterol Health Risks: What You Need to Know',
     description: 'Exploring Clenbuterol\'s Health Risks: Essential Insights for Informed Fitness and Bodybuilding Decisions.',
-    keywords: 'is clenbuterol safe long-term, is clenbuterol toxic to liver, clenbuterol potential risks, insomnia with clenbuterol',
+    keywords: 'is clenbuterol safe long-term, is clenbuterol toxic to liver, clenbuterol potential risks, insomnia with clenbuterol, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenHealthRisks',
         type: 'article',

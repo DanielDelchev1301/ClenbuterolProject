@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Clenbuterol Cycling Strategies for Effective Usage',
     description: 'Master the art of clenbuterol cycling for optimal results in your fitness routine. Learn effective usage strategies here.',
-    keywords: 'how much clenbuterol per day, what is the recommended cycle of clenbuterol, how do you use clenbuterol for cycling, clenbuterol cycle, everything about clenbuterol cycle',
+    keywords: 'how much clenbuterol per day, what is the recommended cycle of clenbuterol, how do you use clenbuterol for cycling, clenbuterol cycle, everything about clenbuterol cycle, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenCycling',
         type: 'article',

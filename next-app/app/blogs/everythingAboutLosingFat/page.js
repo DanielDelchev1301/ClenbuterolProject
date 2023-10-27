@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Everything You Need To Know About Fat Loss',
     description: 'Discover the essentials of effective fat loss in this comprehensive guide to achieving your weight management goals.',
-    keywords: 'what is the basic rule of fat loss, what is the most important thing about losing fat, which part of body loses fat first, how do you lose body fat effectively, what is the 80 20 rule for fat loss, what is the golden rule of fat loss',
+    keywords: 'what is the basic rule of fat loss, what is the most important thing about losing fat, which part of body loses fat first, how do you lose body fat effectively, what is the 80 20 rule for fat loss, what is the golden rule of fat loss, eca clen t3, clenbuterol',
     openGraph: {
         title: 'everythingAboutLosingFat',
         type: 'article',

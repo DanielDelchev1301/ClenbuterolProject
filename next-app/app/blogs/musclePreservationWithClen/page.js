@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Muscle Preservation with Clenbuterol MUST READ',
     description: 'Preserve Muscle with Clenbuterol: Strategies for Lean Mass Maintenance in Bodybuilding and Fitness.',
-    keywords: 'does clenbuterol preserve muscle mass, is clenbuterol muscle sparing, can you build muscle on clenbuterol, strategies for muscle preservation with clenbuterol, caloric deficit with clen',
+    keywords: 'does clenbuterol preserve muscle mass, is clenbuterol muscle sparing, can you build muscle on clenbuterol, strategies for muscle preservation with clenbuterol, caloric deficit with clen, eca clen t3, clenbuterol',
     openGraph: {
         title: 'musclePreservationWithClen',
         type: 'article',

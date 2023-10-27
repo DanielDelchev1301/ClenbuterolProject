@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Clenbuterol Testing & Detection: What Everyone Should Know',
     description: 'Clenbuterol\'s Impact in Sports: Testing, Detection, and Consequences for Athletes and Competitors.',
-    keywords: 'how long is CLEN detectable, can you test for clenbuterol, methods of clenbuterol detection, consequences of lenbuterol detection, clenbuterol testing and detection',
+    keywords: 'how long is CLEN detectable, can you test for clenbuterol, methods of clenbuterol detection, consequences of lenbuterol detection, clenbuterol testing and detection, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenTestingAndDetection',
         type: 'article',

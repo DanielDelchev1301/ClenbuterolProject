@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Clenbuterol and Thermogenic Effects: A Closer Look',
     description: 'Unlock the secrets of Clenbuterol\'s thermogenic power in fitness and bodybuilding. Elevate your workouts while prioritizing your well-being.',
-    keywords: 'does clenbuterol really burn fat, clenbuterol thermogenic effects, does clenbuterol cut fat, what is thermogenesis, is clenbuterol thermogenic agent',
+    keywords: 'does clenbuterol really burn fat, clenbuterol thermogenic effects, does clenbuterol cut fat, what is thermogenesis, is clenbuterol thermogenic agent, eca clen t3, clenbuterol',
     openGraph: {
         title: 'clenAndThermogenicEffects',
         type: 'article',
