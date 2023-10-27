@@ -10,11 +10,11 @@ export const metadata = {
     openGraph: {
         title: 'everythingAboutLosingFat',
         type: 'article',
-        images: ['http://localhost:3000/public/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/everythingAboutLosingFat', 
+        images: ['https://clenpeakperformance.com/public/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/everythingAboutLosingFat', 
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/everythingAboutLosingFat',
+        canonical: 'https://clenpeakperformance.com/blogs/everythingAboutLosingFat',
     }
 };
 
@@ -56,8 +56,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="250.00"
+                price="180.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <p>Focusing on the 80% entails adopting a well-rounded approach to health. This includes maintaining a balanced and nutritious diet, staying physically active through regular exercise, managing stress, getting adequate sleep, and staying hydrated. By prioritizing these lifestyle factors, you can achieve and maintain a healthy body weight more effectively than relying solely on restrictive diets or intense exercise regimens.</p>
@@ -84,7 +84,7 @@ function Blog() {
             <p>Consistency in exercise involves regular physical activity, incorporating both cardiovascular and strength training routines. Consistent workouts help create a calorie deficit and maintain lean muscle mass, which is essential for fat loss.</p>
             <p>Moreover, consistency in sleep patterns, stress management, and hydration is crucial. Adequate sleep and stress control contribute to hormonal balance, supporting fat loss. Staying hydrated aids in overall well-being and can curb unnecessary snacking.</p>
             <p>The golden rule underscores that sustainable fat loss is a journey, not a destination. By consistently making healthy choices, you can achieve and maintain your fat loss goals while also improving your overall health and well-being.</p>
-            <Link className="readMoreLink" href="https://www.precisionnutrition.com/all-about-fat-loss">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.precisionnutrition.com/all-about-fat-loss">More About Fat Loss.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Robert Anderson</span></p>
                 <p>Date: <span>2023-08-25</span></p>

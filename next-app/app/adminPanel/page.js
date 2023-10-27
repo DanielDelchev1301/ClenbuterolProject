@@ -149,11 +149,12 @@ function Admin() {
                                     :
                                         <p>Status: <span>{order.orderInfo.status}</span></p>
                                     }
-                                    <p>Final Price: <span>${Number(order.orderInfo.finalPrice).toFixed(2)}</span></p>
+                                    <p>Shipping: <span>9.99 €</span></p>
+                                    <p>Final Price: <span>{Number(order.orderInfo.finalPrice).toFixed(2)} €</span></p>
                                     {order.orderInfo.products.map((product) => (
                                         <div key={product._id} className="adminOrderProduct">
                                             <p>Name: <span>{product.heading}</span></p>
-                                            <p>Price: <span>{product.price}</span></p>
+                                            <p>Price: <span>{product.price} €</span></p>
                                             <p>Quantity: <span>{product.quantity}</span></p>
                                         </div>
                                     ))}

@@ -4,7 +4,7 @@ export const metadata = {
     title: 'Clen Peak Performance Privacy Policy',
     description: 'Our Privacy Policy outlines how we collect and protect your data, ensuring your online experience is secure and confidential.',
     alternates: {
-      canonical: 'http://localhost:3000/privacyPolicy',
+      canonical: 'https://clenpeakperformance.com/privacyPolicy',
     }
 };
 

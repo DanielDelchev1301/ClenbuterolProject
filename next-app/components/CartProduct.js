@@ -36,8 +36,8 @@ function CartProduct({product, setCartProducts}) {
             <div className="cartProductInfoContainer">
                 <p className="cartProductLabel">Name: <span>{product.heading}</span></p>
                 <p className="cartProductLabel">Quantity: <span>{product.quantity}</span> <button onClick={() => addOne()} className="cartPorductButton buttonPlus">+</button> <button onClick={() => removeOne(product.title)} className="cartPorductButton buttonMinus">-</button></p>
-                <p className="cartProductLabel">Price Each: <span>{product.price}</span></p>
-                <p className="cartProductLabel">Total Price: <span>{`$${(Number(product.price.substring(1)) * Number(product.quantity)).toFixed(2)}`}</span></p>
+                <p className="cartProductLabel">Price Each: <span>{product.price} €</span></p>
+                <p className="cartProductLabel">Total Price: <span>{`${(Number(product.price) * Number(product.quantity)).toFixed(2)} €`}</span></p>
             </div>
         </div>
     );

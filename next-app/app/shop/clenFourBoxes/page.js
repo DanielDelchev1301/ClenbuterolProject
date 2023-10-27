@@ -2,17 +2,17 @@ import Product from '@/components/Product';
 import '../../../styles/shopItem.css';
 
 export const metadata = {
-    title: 'Clenbuterol 150 tabs / 0,02 mg | Buy Clenbuterol Online',
-    description: 'Buy original Sopharma Clenbuterol online! Get 150 tabs with FAST and RELIABLE shipping in Europe, and enjoy CASH ON DELIVERY payment method.',
+    title: 'Clenbuterol 250 tabs / 0,02 mg | Buy Clenbuterol Online',
+    description: 'Buy original Sopharma Clenbuterol online! Get 250 tabs with FAST and RELIABLE shipping in Europe, and enjoy CASH ON DELIVERY payment method.',
     keywords: 'buy clenbuterol online, buy clenbuterol, buy clenbuterol sopharma, fast shipping clenbuterol, cash on delivery clenbuterol, clenbuterol sopharma, clenbuterol kaufen, clenbuterol sopharma kaufen',
     openGraph: {
-        title: 'clenSopharmaThreeBox',
+        title: 'clenSopharmaFiveBoxes',
         type: 'website',
-        images: ['https://clenpeakperformance.com/clenSopharmaOneBoxWatermark.jpg'],
-        url: 'https://clenpeakperformance.com/shop/clenThreeBoxes',
+        images: ['https://clenpeakperformance.com/clenSopharmaFiveBoxesWatermark.jpg'],
+        url: 'https://clenpeakperformance.com/shop/clenFiveBoxes',
     },
     alternates: {
-      canonical: 'https://clenpeakperformance.com/shop/clenThreeBoxes',
+      canonical: 'https://clenpeakperformance.com/shop/clenFiveBoxes',
     }
 };
 
@@ -21,14 +21,14 @@ function Clen() {
         <div className="shopItemMainContainer">
             <Product 
                 src="/clenSopharmaOneBoxWatermark.jpg"
-                alt="clenSopharmaThreeBox" 
+                alt="clenSopharmaFourBox" 
                 width="300" 
                 height="300"
-                href="/shop/clenThreeBoxes"
-                heading="Clenbuterol 150 tabs (3x50 tabs) / 0,02 mg"
-                oldPrice="75.00"
-                price="60.00"
-                title="clenSopharmaThreeBox"
+                href="/shop/clenFourBoxes"
+                heading="Clenbuterol 200 tabs (4x50 tabs) / 0,02 mg"
+                oldPrice="100.00"
+                price="70.00"
+                title="clenSopharmaFourBox"
             />
             <h4>Description</h4>
             <p>Clenbuterol, originally designed to treat breathing disorders, is now widely used for <strong>effective fat burning</strong>, appetite suppression, and muscle preservation. Clenbuterol offers the ideal solution for <strong>weight loss</strong> and achieving a lean body shape. At Clen Peak Performance, you can conveniently purchase Clenbuterol online. Our recommended dosage for effective fat loss is 20 mcg taken orally with breakfast. Remember to maintain a daily dosage of 0.02 mg, with a maximum of 120 mcg per day. Take the pills daily, except on rest days. Consume them 30-45 minutes before workouts. Possible side effects from excessive dosage include sleep disturbances, nervousness, and muscle cramps.</p>
@@ -36,20 +36,20 @@ function Clen() {
             <p>Please note that Clen Peak Performance accepts <strong>cash on delivery as the payment method</strong>.</p>
             <h4>Additional Information</h4>
             <p><strong>Manufacturer:</strong> Sopharma</p>
-            <p><strong>Tablets in a box:</strong> 150</p>
+            <p><strong>Tablets in a box:</strong> 250</p>
             <p><strong>Mg in one tablet:</strong> 0.02 mg</p>
             <h4>Related Products</h4>
             <div className="relatedProductsContainer">
-                <Product 
-                    src="/clenSopharmaOneBoxWatermark.jpg"
-                    alt="clenSopharmaOneBox" 
+                <Product
+                    src="/clenSopharmaFiveBoxesWatermark.jpg"
+                    alt="clenSopharmaFiveBoxes" 
                     width="300" 
                     height="300"
-                    href="/shop/clenOneBox"
-                    heading="Clenbuterol 50 tabs / 0,02 mg"
-                    oldPrice={false}
-                    price="24.99"
-                    title="clenSopharmaOneBox"
+                    href="/shop/clenFiveBoxes"
+                    heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
+                    oldPrice="125.00"
+                    price="80.00"
+                    title="clenSopharmaFiveBoxes"
                 />
                 <Product 
                     src="/ketotifenSopharmaWatermark.jpg"

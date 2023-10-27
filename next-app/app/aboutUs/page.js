@@ -4,7 +4,7 @@ export const metadata = {
     title: 'Clen Peak Performance About Us',
     description: 'Clen Peak Performance is owned and operated by Clen Peak Performance Inc.',
     alternates: {
-      canonical: 'http://localhost:3000/aboutUs',
+      canonical: 'https://clenpeakperformance.com/aboutUs',
     }
 };
 
@@ -47,7 +47,7 @@ function AboutUs() {
                     </div>
                 </div>
                 <p>With over a <strong>DECADE</strong> of experience in selling Clenbuterol online, we stand as one of the largest websites where you can purchase <strong>high-quality Sopharma products</strong> directly from the manufacturer, all available at the best prices. We collaborate with the most reputable pharmaceutical companies to ensure your satisfaction.</p>
-                <p>For your convenience, security, and peace of mind, we offer a <strong>Cash on Delivery</strong> payment method. Our mission is to help you achieve your weight loss goals and overall well-being. We provide <strong>FREE</strong> and <strong>FAST</strong> worldwide shipping for all the products in our online shop. To ensure the highest level of service, we maintain live email support to promptly address all your queries and concerns.</p>
+                <p>For your convenience, security, and peace of mind, we offer a <strong>Cash on Delivery</strong> payment method. Our mission is to help you achieve your weight loss goals and overall well-being. We provide <strong>FAST</strong> and <strong>RELIABLE</strong> shipping in Europe for all the products in our online shop. To ensure the highest level of service, we maintain live email support to promptly address all your requests and concerns.</p>
             </div>
         </div>
     );

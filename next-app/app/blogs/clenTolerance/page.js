@@ -9,11 +9,11 @@ export const metadata = {
     openGraph: {
         title: 'clenTolerance',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenTolerance',  
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenTolerance',  
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenTolerance',
+        canonical: 'https://clenpeakperformance.com/blogs/clenTolerance',
     }
 };
 
@@ -48,8 +48,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="250.00"
+                price="180.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="recognizingClenTolerance">How To Recognize Clenbuterol Tolerance?</h3>

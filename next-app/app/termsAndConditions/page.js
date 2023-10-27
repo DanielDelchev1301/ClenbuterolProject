@@ -4,7 +4,7 @@ export const metadata = {
     title: 'Clen Peak Performance Terms and Conditions',
     description: 'Our Terms and Conditions define the rules for using our services, promoting a fair and secure online environment.',
     alternates: {
-      canonical: 'http://localhost:3000/termsAndConditions',
+      canonical: 'https://clenpeakperformance.com/termsAndConditions',
     }
 };
 

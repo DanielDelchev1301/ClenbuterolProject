@@ -6,15 +6,15 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Stacking Clenbuterol with Other Compounds: Strategies',
     description: 'Elevating Fitness with Clenbuterol Stacks: Strategies for Combining Compounds to Optimize Results in Your Journey.',
-    keywords: 'what not to mix with clenbuterol, what should you take with clenbuterol, common compounds stacked with clenbuterol, considerations for stacking clenbuterol',
+    keywords: 'what not to mix with clenbuterol, what should you take with clenbuterol, common compounds stacked with clenbuterol, considerations for stacking clenbuterol, clenbuterol and other compounds',
     openGraph: {
         title: 'clenWithOtherCompounds',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenWithOtherCompounds', 
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenWithOtherCompounds', 
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenWithOtherCompounds',
+        canonical: 'https://clenpeakperformance.com/blogs/clenWithOtherCompounds',
     }
 };
 
@@ -67,8 +67,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="250.00"
+                price="180.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="considerationForStacking">Considerations for Stacking Clenbuterol</h3>
@@ -91,7 +91,7 @@ function Blog() {
             <p>Be aware of the legal and ethical considerations associated with the compounds in your stack. Some substances may be prohibited in competitive sports or subject to legal restrictions in certain regions.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Stacking clenbuterol with other compounds is a strategy employed by many fitness enthusiasts to achieve their desired outcomes. While it can be effective, it should be approached with careful planning and consideration of individual goals, dosages, health monitoring, and legal implications. Prioritizing safety and consulting a qualified healthcare professional is paramount in the process of stacking.</p>
-            <Link className="readMoreLink" href="https://www.alenamenko.com/the-ideal-clenbuterol-dosage-for-weight-loss-in-bodybuilding-steroid-cycles/#:~:text=For%20those%20looking%20to%20grow,for%20their%20muscle%2Dbuilding%20features.">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.alenamenko.com/the-ideal-clenbuterol-dosage-for-weight-loss-in-bodybuilding-steroid-cycles/#:~:text=For%20those%20looking%20to%20grow,for%20their%20muscle%2Dbuilding%20features.">Clenbuterol And Other Compounds.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Emma Turner</span></p>
                 <p>Date: <span>2023-07-22</span></p>

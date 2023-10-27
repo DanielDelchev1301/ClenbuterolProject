@@ -9,11 +9,11 @@ export const metadata = {
     openGraph: {
         title: 'clenMisuseAndAbuse',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenMisuseAndAbuse',    
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenMisuseAndAbuse',    
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenMisuseAndAbuse',
+        canonical: 'https://clenpeakperformance.com/blogs/clenMisuseAndAbuse',
     }
 };
 
@@ -54,8 +54,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="whatHappenIfYouTakeTooMuchClen">What happens if you take too much clenbuterol?</h3>
@@ -82,7 +82,7 @@ function Blog() {
             <p>Individuals struggling with clenbuterol misuse and abuse should have access to support and rehabilitation programs to address the physical and psychological aspects of dependency and withdrawal.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Misuse and abuse of clenbuterol present significant risks and consequences for individuals. Understanding the reasons behind misuse and the potential dangers can help individuals make informed choices about its use. By promoting education, regulation, and support, we can work towards minimizing the misuse and abuse of clenbuterol in both fitness and sports contexts, prioritizing the well-being and safety of all involved.</p>
-            <Link className="readMoreLink" href="https://pubmed.ncbi.nlm.nih.gov/12570701/">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://pubmed.ncbi.nlm.nih.gov/12570701/">Abuse Of Clenbuterol.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Emma Turner</span></p>
                 <p>Date: <span>2023-07-25</span></p>

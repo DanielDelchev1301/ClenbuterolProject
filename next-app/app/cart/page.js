@@ -74,9 +74,9 @@ function Cart() {
             let _finalPrice = 0;
             let savedMoney = 0;
             for (let key in cartProductsWithQuantity) {
-                _finalPrice += Number(cartProductsWithQuantity[key].price.substring(1)) * Number(cartProductsWithQuantity[key].quantity);
+                _finalPrice += Number(cartProductsWithQuantity[key].price) * Number(cartProductsWithQuantity[key].quantity);
                 if (cartProductsWithQuantity[key].oldPrice) {
-                    savedMoney += (Number(cartProductsWithQuantity[key].oldPrice.substring(1)) - Number(cartProductsWithQuantity[key].price.substring(1))) * Number(cartProductsWithQuantity[key].quantity);
+                    savedMoney += (Number(cartProductsWithQuantity[key].oldPrice) - Number(cartProductsWithQuantity[key].price)) * Number(cartProductsWithQuantity[key].quantity);
                 }
             }
             setSavedMoney(savedMoney);
@@ -128,7 +128,7 @@ function Cart() {
                 zipCode: shippingAddress.zipCode.value,
                 orderInfo: {
                     products: products,
-                    finalPrice: finalPrice,
+                    finalPrice: finalPrice + 9.99,
                     date: new Date(),
                     status: 'pending'
                 }
@@ -186,9 +186,8 @@ function Cart() {
                                 <CartProduct key={product.heading} product={product} setCartProducts={setCartProducts}/>
                                 ))}
                             <div className="finalAndSavedMoneyContainer">
-                                <p className="finalAndSaved">Shipping Cost: <span className="shippingCost">$0.00</span></p>
-                                {savedMoney ? <p className="finalAndSaved">Money Saved: <span className="savedMoney">${savedMoney.toFixed(2)}</span></p> : <></>}
-                                {finalPrice ? <p className="finalAndSaved">Final Price: <span className="finalMoney">${finalPrice.toFixed(2)}</span></p> : <></>}
+                                {savedMoney ? <p className="finalAndSaved">Money Saved: <span className="savedMoney">{savedMoney.toFixed(2)} €</span></p> : <></>}
+                                {finalPrice ? <p className="finalAndSaved">Final Price: <span className="finalMoney">{finalPrice.toFixed(2)} €</span></p> : <></>}
                             </div>
                         </>
                         :
@@ -288,20 +287,20 @@ function Cart() {
                         <div className="cartShippingMethodContainer">
                             {!seeMore 
                                 ?
-                                <p>We've chosen to send your order via postal mail, a trusted and reliable method. Enjoy the convenience and security of having your package delivered right to your doorstep.</p>
+                                <p>We've chosen to send your order via our shipping service, a trusted and reliable method. Enjoy the convenience and security of having your package delivered right to your doorstep.</p>
                                 :
                                 <>
                                     <p>Dear Valued Customers,</p>
-                                    <p>We are committed to providing you with the best and most reliable shipping option for your orders. Our chosen method for shipping is through trusted postal mail services. Here's what you can expect with postal mail as your shipping method:</p>
-                                    <p><strong>Shipping Cost:</strong> Enjoy <strong>FREE shipping</strong> as a special bonus. No extra costs when you meet certain conditions, like a minimum purchase. It's our way of making your shopping experience even better.</p>
-                                    <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our fast shipping option ensures that you receive your packages within just 3-4 days. It's a proven method for prompt and secure delivery.</p>
-                                    <p><strong>Security:</strong> We understand the importance of your orders arriving safely and securely. Postal mail is a tried-and-true method with a strong track record for the safe delivery of packages.</p>
-                                    <p><strong>Reliability:</strong> Postal services have a well-established network that ensures your package's timely delivery. You can count on us to get your order to you promptly.</p>
-                                    <p><strong>Convenience:</strong> Postal mail offers the convenience of delivering to your doorstep. You won't need to visit a courier office or take time off work to receive your package.</p>
+                                    <p>We are committed to providing you with the best and most reliable shipping option for your orders. Here's what you can expect with our shipping method:</p>
+                                    <p><strong>Shipping Cost:</strong> Enjoy <strong>shipping in whole Europe</strong> for just <strong>9.99€</strong>, no extra costs. It's our way of making your shopping experience even better.</p>
+                                    <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our <strong>fast shipping</strong> option ensures that you receive your packages within just 2-5 days.</p>
+                                    <p><strong>Security:</strong> We understand the importance of your orders arriving safely and securely. Our shipping service is a tried-and-true method with a strong track record for the safe delivery of packages.</p>
+                                    <p><strong>Reliability:</strong> Our shipping service have a well-established network that ensures your package's timely delivery. You can count on us to get your order to you promptly.</p>
+                                    <p><strong>Convenience:</strong> We offer the convenience of delivering to your doorstep. You won't need to visit a courier office or take time off work to receive your package.</p>
                                     <p><strong>Tracking:</strong> We provide tracking information vie email so you can monitor the progress of your order. You'll be kept informed every step of the way.</p>
                                     <p>Rest assured, we take great care in packaging your orders to minimize any potential issues during transit.</p>
-                                    <p>Your satisfaction is our top priority, and we are confident that postal mail is a secure and efficient method for shipping your orders. If you have any questions or concerns about your shipment, please don't hesitate to reach out to our email: <strong>clenpeakperformance@gmail.com</strong> .</p>
-                                    <p>Thank you for choosing us, and we look forward to serving you with a seamless and worry-free shipping experience.</p>
+                                    <p>Your satisfaction is our top priority, and we are confident that our service is a secure and efficient method for shipping your orders. If you have any questions or concerns about your shipment, please don't hesitate to reach out to our email: <Link href="mailto:clenpeakperformance@gmail.com" className="linkToEmail">clenpeakperformance@gmail.com</Link> .</p>
+                                    <p>Thank you for choosing us, and we look forward to serving you with a seamless and worry-fast shipping experience.</p>
                                     <p>Best regards,</p>
                                     <p><strong>Clen peak Performance</strong></p>
 
@@ -325,15 +324,15 @@ function Cart() {
                             <p><strong>Hassle-Free:</strong> No need to share sensitive financial information online. Pay with cash upon delivery, making the payment process straightforward and worry-free.</p>
                             <p><strong>Convenience:</strong> It's the ultimate convenience - just keep the exact amount of cash ready when your order arrives, and our delivery team will handle the rest.</p>
                             <p><strong>Trustworthy:</strong> We value your trust, and Cash on Delivery demonstrates our commitment to your satisfaction and the quality of our products.</p>
-                            <p>Your peace of mind is our priority, and we are confident that Cash on Delivery is a secure and hassle-free payment method. If you have any questions or concerns about your payment, please don't hesitate to reach out to our email: <strong>clenpeakperformance@gmail.com</strong> .</p>
+                            <p>Your peace of mind is our priority, and we are confident that Cash on Delivery is a secure and hassle-free payment method. If you have any questions or concerns about your payment, please don't hesitate to reach out to our email: <Link href="mailto:clenpeakperformance@gmail.com" className="linkToEmail">clenpeakperformance@gmail.com</Link> .</p>
                             <p>Thank you for choosing us, and we look forward to providing you with a smooth and secure shopping experience.</p>
                             <p>Best regards,</p>
                             <p><strong>Clen peak Performance</strong></p>
                         </div>
                         <div className="finalAndSavedMoneyContainer">
-                            <p className="finalAndSaved">Shipping Cost: <span className="shippingCost">$0.00</span></p>
-                            {savedMoney ? <p className="finalAndSaved">Money Saved: <span className="savedMoney">${savedMoney.toFixed(2)}</span></p> : <></>}
-                            {finalPrice ? <p className="finalAndSaved">Final Price: <span className="finalMoney">${finalPrice.toFixed(2)}</span></p> : <></>}
+                            <p className="finalAndSaved">Shipping Cost: <span className="shippingCost">9.99 €</span></p>
+                            {savedMoney ? <p className="finalAndSaved">Money Saved: <span className="savedMoney">{savedMoney.toFixed(2)} €</span></p> : <></>}
+                            {finalPrice ? <p className="finalAndSaved">Final Price: <span className="finalMoney">{(finalPrice + 9.99).toFixed(2)} €</span></p> : <></>}
                         </div>
                     </div>
                 </div>
@@ -376,9 +375,9 @@ function Cart() {
             <div className="offerAdditionalProductsContainer">
                 <div className="cartLinksContainer">
                     <Link href="/blogs/clenAsAPerformanceDrug" className="cartLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-                    <Link href="/blogs/clenAsAPerformanceDrug" className="cartLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-                    <Link href="/blogs/clenAsAPerformanceDrug" className="cartLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
-                    <Link href="/blogs/clenAsAPerformanceDrug" className="cartLinkButton">Clenbuterol as a Performance-Enhancing Drug</Link>
+                    <Link href="/blogs/everythingAboutLosingFat" className="cartLinkButton">Everything You Need To Know About Fat Loss</Link>
+                    <Link href="/blogs/ultimateGuideForMuscleMass" className="cartLinkButton">The Ultimate Bodybuilding Guide For Muscle Mass</Link>
+                    <Link href="/blogs/clenDosingProtocols" className="cartLinkButton">Clenbuterol Dosing Protocols: Strategies for Safe and Effective Use</Link>
                 </div>
                 <div className="blogLayoutProductsContainer">
                     <Product
@@ -389,7 +388,7 @@ function Cart() {
                         href="/shop/clenOneBox"
                         heading="Clenbuterol 50 tabs / 0,02 mg"
                         oldPrice={false}
-                        price="$50.00"
+                        price="24.99"
                         title="clenSopharmaOneBox"
                         setCartProducts={setCartProducts}
                     />
@@ -402,7 +401,7 @@ function Cart() {
                         href="/shop/t3CytomelOneBox"
                         heading="T3 Cytomel 30 tabs / 0,025 mg"
                         oldPrice={false}
-                        price="$50.00"
+                        price="40.00"
                         title="cytomel"
                         setCartProducts={setCartProducts}
                     />
@@ -414,8 +413,8 @@ function Cart() {
                         height="300"
                         href="/shop/t4ThyroxinOneBox"
                         heading="T4 L-Thyroxine 100 tabs / 0.1 mg"
-                        oldPrice="$46.00"
-                        price="$37.00"
+                        oldPrice="35.00"
+                        price="29.00"
                         title="thyroxin"
                         setCartProducts={setCartProducts}
                     />

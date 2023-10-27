@@ -10,11 +10,11 @@ export const metadata = {
     openGraph: {
         title: 'clenAsAPerformanceDrug',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenAsAPerformanceDrug',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenAsAPerformanceDrug',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenAsAPerformanceDrug',
+        canonical: 'https://clenpeakperformance.com/blogs/clenAsAPerformanceDrug',
     }
 };
 
@@ -39,8 +39,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="clenAndAthletic">Clenbuterol and Athletic Performance</h3>
@@ -80,7 +80,7 @@ function Blog() {
                 Before even contemplating the use of clenbuterol, athletes should consult with medical professionals and adhere to the rules and regulations of their respective sports organizations. Ultimately, achieving excellence in sports should be a pursuit that prioritizes health, integrity, and fairness for all competitors.
                 In conclusion, while clenbuterol may offer potential benefits, it is a path fraught with risks and challenges that athletes must carefully consider before choosing to walk it.
             </p>
-            <Link className="readMoreLink" href="https://www.webmd.com/pain-management/what-you-need-to-know-about-clenbuterol-for-bodybuilding">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.webmd.com/pain-management/what-you-need-to-know-about-clenbuterol-for-bodybuilding">More About Clenbuterol.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Carlos Esteban</span></p>
                 <p>Date: <span>2023-04-04</span></p>

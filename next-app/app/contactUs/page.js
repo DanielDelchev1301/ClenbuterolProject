@@ -5,7 +5,7 @@ export const metadata = {
     title: 'Clen Peak Performance Contact Us',
     description: 'Clen Peak Performance is owned and operated by Clen Peak Performance Inc.',
     alternates: {
-      canonical: 'http://localhost:3000/contactUs',
+      canonical: 'https://clenpeakperformance.com/contactUs',
     }
 };
 

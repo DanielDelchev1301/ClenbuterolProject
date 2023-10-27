@@ -6,15 +6,15 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Clenbuterol Cycling Strategies for Effective Usage',
     description: 'Master the art of clenbuterol cycling for optimal results in your fitness routine. Learn effective usage strategies here.',
-    keywords: 'how much clenbuterol per day, what is the recommended cycle of clenbuterol, how do you use clenbuterol for cycling',
+    keywords: 'how much clenbuterol per day, what is the recommended cycle of clenbuterol, how do you use clenbuterol for cycling, clenbuterol cycle, everything about clenbuterol cycle',
     openGraph: {
         title: 'clenCycling',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenCycling',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenCycling',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenCycling',
+        canonical: 'https://clenpeakperformance.com/blogs/clenCycling',
     }
 };
 
@@ -52,8 +52,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="effectiveCycling">Effective Clenbuterol Cycling Guidelines</h3>
@@ -83,7 +83,7 @@ function Blog() {
             <p>Proper cycling helps prevent tolerance and side effects. It's vital to monitor your body's response, stay hydrated, and maintain a well-balanced diet rich in protein and essential nutrients. Consulting a healthcare professional or experienced coach is advisable to tailor the clenbuterol cycling regimen to your specific fitness goals and health considerations. Remember that safety and a measured approach are paramount when using clenbuterol for cycling in bodybuilding.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Cycling clenbuterol is a fundamental aspect of safe and effective usage. Whether you're using it for fat loss, muscle preservation, or other fitness goals, following proper cycling protocols is essential. Always prioritize your health and well-being and consider consulting a healthcare professional to ensure your clenbuterol cycling is structured for maximum effectiveness and minimal risk.</p>
-            <Link className="readMoreLink" href="https://www.alenamenko.com/the-ideal-clenbuterol-dosage-for-weight-loss-in-bodybuilding-steroid-cycles/">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.alenamenko.com/the-ideal-clenbuterol-dosage-for-weight-loss-in-bodybuilding-steroid-cycles/">Everything About Clenbuterol Cycle.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Robert Anderson</span></p>
                 <p>Date: <span>2023-09-10</span></p>

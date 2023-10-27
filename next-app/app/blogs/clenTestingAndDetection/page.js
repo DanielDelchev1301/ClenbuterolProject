@@ -5,15 +5,15 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Clenbuterol Testing & Detection: What Everyone Should Know',
     description: 'Clenbuterol\'s Impact in Sports: Testing, Detection, and Consequences for Athletes and Competitors.',
-    keywords: 'how long is CLEN detectable, can you test for clenbuterol, methods of clenbuterol detection, consequences of lenbuterol detection',
+    keywords: 'how long is CLEN detectable, can you test for clenbuterol, methods of clenbuterol detection, consequences of lenbuterol detection, clenbuterol testing and detection',
     openGraph: {
         title: 'clenTestingAndDetection',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenTestingAndDetection',  
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenTestingAndDetection',  
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenTestingAndDetection',
+        canonical: 'https://clenpeakperformance.com/blogs/clenTestingAndDetection',
     }
 };
 
@@ -62,8 +62,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="athleteEducationAndCompliance">Athlete Education and Compliance</h3>
@@ -76,7 +76,7 @@ function Blog() {
             <p>Athletes should exercise caution when obtaining medications or supplements, ensuring that they are from reputable sources and do not contain banned substances, including clenbuterol.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Clenbuterol testing and detection are essential components of anti-doping efforts in sports. Athletes and individuals subject to anti-doping regulations must be aware of the detection methods and windows for clenbuterol. Prioritizing education, compliance, and responsible decision-making helps protect the integrity of sports and the well-being of athletes.</p>
-            <Link className="readMoreLink" href="https://pubmed.ncbi.nlm.nih.gov/9448065/#:~:text=Urinalysis%20can%20detect%20clenbuterol%20for,hair%20samples%20attain%20greatest%20sensitivity.">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://pubmed.ncbi.nlm.nih.gov/9448065/#:~:text=Urinalysis%20can%20detect%20clenbuterol%20for,hair%20samples%20attain%20greatest%20sensitivity.">Clenbuterol Testing And Detection.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Carlos Esteban</span></p>
                 <p>Date: <span>2023-05-14</span></p>

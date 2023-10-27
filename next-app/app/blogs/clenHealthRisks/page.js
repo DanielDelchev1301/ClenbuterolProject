@@ -9,11 +9,11 @@ export const metadata = {
     openGraph: {
         title: 'clenHealthRisks',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenHealthRisks',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenHealthRisks',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenHealthRisks',
+        canonical: 'https://clenpeakperformance.com/blogs/clenHealthRisks',
     }
 };
 
@@ -67,8 +67,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="individualVariability">Individual Variability</h3>
@@ -88,7 +88,7 @@ function Blog() {
             <p>Maintain a balanced diet rich in essential nutrients to counteract appetite suppression and nutritional deficiencies. Protein intake should be sufficient to support muscle maintenance and recovery.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Clenbuterol offers potential benefits for fat loss and muscle preservation, but its use is not without potential health risks. Understanding these health risks and approaching clenbuterol use with caution and responsibility is paramount. Prioritize your health and well-being, consult a qualified healthcare professional, and make informed decisions to achieve your fitness goals safely and effectively.</p>
-            <Link className="readMoreLink" href="https://www.medicalnewstoday.com/articles/319927#risks-and-side-effects">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.medicalnewstoday.com/articles/319927#risks-and-side-effects">Clenbuterol Potential Risks.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Sophia Lee</span></p>
                 <p>Date: <span>2023-09-23</span></p>

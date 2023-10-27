@@ -5,15 +5,15 @@ import Link from 'next/link';
 export const metadata = {
     title: 'The Ultimate Bodybuilding Guide For Muscle Mass',
     description: 'Discover the essentials of effective fat loss in this comprehensive guide to achieving your weight management goals.',
-    keywords: 'what are the best 5 exercises for muscle mass, does nutrition affect muscle growth, how much rest is good for muscle growth',
+    keywords: 'what are the best 5 exercises for muscle mass, does nutrition affect muscle growth, how much rest is good for muscle growth, guide for muscle mass',
     openGraph: {
         title: 'ultimateGuideForMuscleMass',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/ultimateGuideForMuscleMass',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/ultimateGuideForMuscleMass',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/ultimateGuideForMuscleMass',
+        canonical: 'https://clenpeakperformance.com/blogs/ultimateGuideForMuscleMass',
     }
 };
 
@@ -81,8 +81,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="doesNutritionAffectsMuscleGrowth">Does Nutrition Affect Muscle Growth?</h3>
@@ -112,7 +112,7 @@ function Blog() {
             <iframe className="youtubeVideo"
                 src="https://www.youtube.com/embed/52cOdRE97Kk?si=V3DgIilErO3BbLRI">
             </iframe>
-            <Link className="readMoreLink" href="https://www.everyoneactive.com/content-hub/fitness/bodybuilding/#:~:text=Your%20workout%20plan%20should%20consist,to%2010%20reps%20per%20exercise.">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.everyoneactive.com/content-hub/fitness/bodybuilding/#:~:text=Your%20workout%20plan%20should%20consist,to%2010%20reps%20per%20exercise.">Guide For Muscle Mass.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Brian Johnson</span></p>
                 <p>Date: <span>2023-04-21</span></p>

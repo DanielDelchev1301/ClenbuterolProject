@@ -21,8 +21,8 @@ function BlogLayout({ children }) {
             height="300"
             href="/shop/clenThreeBoxes"
             heading="Clenbuterol 150 tabs (3x50 tabs) / 0,02 mg"
-            oldPrice="$150.00"
-            price="$120.00"
+            oldPrice="75.00"
+            price="60.00"
             title="clenSopharmaThreeBox"
           />
 
@@ -34,7 +34,7 @@ function BlogLayout({ children }) {
             href="/shop/clenOneBox"
             heading="Clenbuterol 50 tabs / 0,02 mg"
             oldPrice={false}
-            price="$50.00"
+            price="24.99"
             title="clenSopharmaOneBox"
           />
 
@@ -46,7 +46,7 @@ function BlogLayout({ children }) {
             href="/shop/ketotifenOneBox"
             heading="Ketotifen 30 tabs / 1 mg"
             oldPrice={false}
-            price="$36.00"
+            price="20.00"
             title="ketotifenSopharma"
           />
 
@@ -64,7 +64,7 @@ function BlogLayout({ children }) {
             href="/shop/t3CytomelOneBox"
             heading="T3 Cytomel 30 tabs / 0,025 mg"
             oldPrice={false}
-            price="$50.00"
+            price="40.00"
             title="cytomel"
           />
 
@@ -75,8 +75,8 @@ function BlogLayout({ children }) {
             height="300"
             href="/shop/t4ThyroxinOneBox"
             heading="T4 L-Thyroxine 100 tabs / 0.1 mg"
-            oldPrice="$46.00"
-            price="$37.00"
+            oldPrice="35.00"
+            price="29.00"
             title="thyroxin"
           />
 

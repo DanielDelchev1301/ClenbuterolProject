@@ -10,11 +10,11 @@ export const metadata = {
     openGraph: {
         title: 'musclePreservationWithClen',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/musclePreservationWithClen',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/musclePreservationWithClen',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/musclePreservationWithClen',
+        canonical: 'https://clenpeakperformance.com/blogs/musclePreservationWithClen',
     }
 };
 
@@ -55,8 +55,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h4>Clenbuterol's Thermogenic Effects</h4>
@@ -93,7 +93,7 @@ function Blog() {
             <p>Overtraining can lead to muscle breakdown and hinder your muscle preservation efforts. Listen to your body, and incorporate rest days into your training program to prevent overtraining. Pay attention to signs of overtraining, such as chronic fatigue, decreased performance, and increased susceptibility to illness.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Clenbuterol, with its thermogenic and muscle-sparing properties, can be a valuable tool for individuals aiming to preserve lean muscle mass during various phases of their fitness journey. By incorporating the right strategies, you can harness the benefits of clenbuterol while prioritizing muscle preservation, ensuring that your hard-earned gains remain intact.</p>
-            <Link className="readMoreLink" href="https://www.healthline.com/health/clenbuterol#weight-loss">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.healthline.com/health/clenbuterol#weight-loss">Muscle Preservation With Clenbuterol.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Laura Martinez</span></p>
                 <p>Date: <span>2023-08-21</span></p>

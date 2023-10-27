@@ -9,11 +9,11 @@ export const metadata = {
     openGraph: {
         title: 'clenLegalStatus',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenLegalStatus',    
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenLegalStatus',    
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenLegalStatus',
+        canonical: 'https://clenpeakperformance.com/blogs/clenLegalStatus',
     }
 };
 
@@ -63,8 +63,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="considerationsForIndividuals">Considerations for Individuals</h3>
@@ -79,7 +79,7 @@ function Blog() {
             <p>Athletes and individuals involved in competitive sports should be aware of the anti-doping regulations related to clenbuterol. Many sports organizations prohibit its use and conduct thorough testing to detect its presence. Compliance with these regulations is vital to avoid disqualification and penalties.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>The legal status of clenbuterol varies widely across the globe, reflecting diverse approaches to its use and regulation. Whether approved for medical purposes, regulated, or restricted, understanding and respecting the legal landscape in your region is crucial. Additionally, adherence to legal and ethical guidelines ensures the responsible and safe use of clenbuterol, promoting both individual well-being and broader societal interests.</p>
-            <Link className="readMoreLink" href="https://www.medicalnewstoday.com/articles/319927">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.medicalnewstoday.com/articles/319927">Legal Status Of Clenbuterol.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Mike Smith</span></p>
                 <p>Date: <span>2023-10-23</span></p>

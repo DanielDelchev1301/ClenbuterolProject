@@ -1,13 +1,16 @@
-# http://localhost:3000/sitemap.xml
+# https://clenpeakperformance.com/sitemap.xml
 
 User-agent: *
 Disallow: /adminPanel
 Allow: /
 Allow: /cart
 Allow: /shop
+Allow: /shop/clenTenBoxes
 Allow: /shop/clenFiveBoxes
-Allow: /shop/clenOneBox
+Allow: /shop/clenFourBoxes
 Allow: /shop/clenThreeBoxes
+Allow: /shop/clenTwoBoxes
+Allow: /shop/clenOneBox
 Allow: /shop/ketotifenOneBox
 Allow: /shop/t3CytomelOneBox
 Allow: /shop/t4ThyroxinOneBox

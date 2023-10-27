@@ -5,15 +5,15 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Clenbuterol Side Effects: What You Need to Know',
     description: 'Diving into Clenbuterol Side Effects: Essential Knowledge for Safe and Effective Fitness and Bodybuilding.',
-    keywords: 'potential clenbuterol side effects, is clenbuterol increase hearth rate, is clenbuterol cause insomnia, is clenbuterol increase blood pressure, is clenbuterol suppress appetite',
+    keywords: 'potential clenbuterol side effects, is clenbuterol increase hearth rate, is clenbuterol cause insomnia, is clenbuterol increase blood pressure, is clenbuterol suppress appetite, clenbuterol side effects',
     openGraph: {
         title: 'clenSideEffects',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenSideEffects',   
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenSideEffects',   
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenSideEffects',
+        canonical: 'https://clenpeakperformance.com/blogs/clenSideEffects',
     }
 };
 
@@ -61,8 +61,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="individualVariability">Individual Variability</h3>
@@ -86,7 +86,7 @@ function Blog() {
             <p>It is essential to be aware of the legal and ethical considerations surrounding clenbuterol use. The compound may be prohibited in competitive sports, and legal regulations vary by region.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Clenbuterol offers potential benefits for fat loss and muscle preservation, but its use is not without potential side effects. Understanding these side effects and approaching clenbuterol use with caution and responsibility is paramount. Prioritize your health and well-being, consult a qualified healthcare professional, and make informed decisions to achieve your fitness goals safely and effectively.</p>
-            <Link className="readMoreLink" href="https://www.medicalnewstoday.com/articles/319927#risks-and-side-effects">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.medicalnewstoday.com/articles/319927#risks-and-side-effects">Clenbuterol Side Effects.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>John Freedman</span></p>
                 <p>Date: <span>2023-09-14</span></p>

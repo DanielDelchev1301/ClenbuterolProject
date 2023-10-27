@@ -5,15 +5,15 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Consult with a Healthcare Pro: Vital for Bodybuilding',
     description: 'To excel in bodybuilding, consult healthcare pros for essential guidance and regular support. Optimize your performance wisely.',
-    keywords: 'why is consultation important in health, what is the purpose of the consultation, what are the benefits of consultation model',
+    keywords: 'why is consultation important in health, what is the purpose of the consultation, what are the benefits of consultation model, consultation for clenbuterol',
     openGraph: {
         title: 'clenConsultation',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenConsultation',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenConsultation',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenConsultation',
+        canonical: 'https://clenpeakperformance.com/blogs/clenConsultation',
     }
 };
 
@@ -50,8 +50,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="whyIsConsultingImportantInHealth">Why is consultation important in health?</h3>
@@ -68,7 +68,7 @@ function Blog() {
             <p>In summary, the consultation model excels at promoting effective communication and understanding, facilitating accurate diagnosis and treatment in healthcare, enhancing decision-making in business, optimizing resource allocation, and encouraging ongoing learning and improvement. These three paragraphs illustrate the multi-faceted benefits of consultation models across diverse domains.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Consultation with a healthcare professional is a fundamental aspect of responsible and effective bodybuilding. Their expertise can help prevent injuries, optimize nutrition and supplementation, monitor overall health, and provide valuable support in achieving your fitness goals. Prioritize your well-being and safety by incorporating regular consultations with healthcare professionals into your bodybuilding journey.</p>
-            <Link className="readMoreLink" href="https://health.ec.europa.eu/other-pages/basic-page/responses-consultation-health-workforce_en">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://health.ec.europa.eu/other-pages/basic-page/responses-consultation-health-workforce_en">Consultation For Clenbuterol.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Sarah Miller</span></p>
                 <p>Date: <span>2023-04-18</span></p>

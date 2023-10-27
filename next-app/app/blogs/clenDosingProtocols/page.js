@@ -6,15 +6,15 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Clenbuterol Dosing Protocols: Safe and Effective Use',
     description: 'Mastering clenbuterol dosing is vital for maximizing benefits and minimizing side effects in your fitness journey. Learn safe protocols here.',
-    keywords: 'how many mg of Clenbuterol should I take a day, is 40mg of Clenbuterol too much, what time should I take Clenbuterol for fat loss, should you take Clenbuterol everyday',
+    keywords: 'how many mg of Clenbuterol should I take a day, is 40mg of Clenbuterol too much, what time should I take Clenbuterol for fat loss, should you take Clenbuterol everyday, clenbuterol dosage',
     openGraph: {
         title: 'clenDosingProtocols',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenDosingProtocols',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenDosingProtocols',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenDosingProtocols',
+        canonical: 'https://clenpeakperformance.com/blogs/clenDosingProtocols',
     }
 };
 
@@ -49,8 +49,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="safeAndEffectiveDosing">Safe and Effective Dosing Guidelines</h3>
@@ -81,7 +81,7 @@ function Blog() {
             <p>In summary, it's best to use Clenbuterol daily during an "on" phase within a structured cycle and to allow for the "off" phase to maintain its efficacy and mitigate potential side effects. Always consult a healthcare professional or experienced coach for personalized guidance on your Clenbuterol regimen.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>Clenbuterol dosing is a critical aspect of safe and effective use. Whether you're using it for fat loss, muscle preservation, or other fitness goals, following proper dosing protocols and guidelines is essential. Always prioritize your health and well-being, and consider consulting a healthcare professional to ensure your clenbuterol use is safe and tailored to your specific needs.</p>
-            <Link className="readMoreLink" href="https://www.alenamenko.com/the-ideal-clenbuterol-dosage-for-weight-loss-in-bodybuilding-steroid-cycles/">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://www.alenamenko.com/the-ideal-clenbuterol-dosage-for-weight-loss-in-bodybuilding-steroid-cycles/">More About Clenbuterol Dosage.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Laura Martinez</span></p>
                 <p>Date: <span>2023-10-02</span></p>

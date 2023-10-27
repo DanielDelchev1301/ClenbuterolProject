@@ -67,7 +67,7 @@ function Product({
             />
             <div className="productContent">
                 <Link href={href} className="productHeader">{heading}</Link>
-                <p className="productPrice">{oldPrice && <span className="productOldPrice">{oldPrice}</span>} {price}</p>
+                <p className="productPrice">{oldPrice && <span className="productOldPrice">{oldPrice} €</span>} {price} €</p>
             </div>
             <div className="productButtons">
                 <button onClick={addToBag} className="productButton addToCartButton">Add to Cart</button>

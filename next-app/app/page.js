@@ -9,11 +9,11 @@ export const metadata = {
   openGraph: {
     title: 'home',
     type: 'website',
-    images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-    url: 'http://localhost:3000/',
+    images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+    url: 'https://clenpeakperformance.com/',
   },
   alternates: {
-    canonical: 'http://localhost:3000/',
+    canonical: 'https://clenpeakperformance.com/',
   }
 };
 
@@ -48,8 +48,8 @@ function Home() {
             height="300"
             href="/shop/clenFiveBoxes"
             heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-            oldPrice="$250.00"
-            price="$180.00"
+            oldPrice="125.00"
+            price="80.00"
             title="clenSopharmaFiveBoxes"
           />
           <Product 
@@ -59,8 +59,8 @@ function Home() {
             height="300"
             href="/shop/clenThreeBoxes"
             heading="Clenbuterol 150 tabs (3x50 tabs) / 0,02 mg"
-            oldPrice="$150.00"
-            price="$120.00"
+            oldPrice="75.00"
+            price="60.00"
             title="clenSopharmaThreeBox"
           />
         </div>
@@ -96,7 +96,7 @@ function Home() {
             href="/shop/ketotifenOneBox"
             heading="Ketotifen 30 tabs / 1 mg"
             oldPrice={false}
-            price="$36.00"
+            price="20.00"
             title="ketotifenSopharma"
           />
           <Product 
@@ -106,8 +106,8 @@ function Home() {
             height="300"
             href="/shop/t4ThyroxinOneBox"
             heading="T4 L-Thyroxine 100 tabs / 0.1 mg"
-            oldPrice="$46.00"
-            price="$37.00"
+            oldPrice="35.00"
+            price="29.00"
             title="thyroxin"
           />
         </div>

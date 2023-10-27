@@ -5,15 +5,15 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Ethical Considerations of Clenbuterol Use in Bodybuilding',
     description: 'Exploring Ethical Aspects of Clenbuterol in Bodybuilding - Insights into Responsible and Moral Practices in the Sport.',
-    keywords: 'is it OK to take clenbuterol, does clenbuterol affect male fertility',
+    keywords: 'is it OK to take clenbuterol, can clenbuterol affect male fertility, clenbuterol affects over fertility',
     openGraph: {
         title: 'clenEthicalConsiderations',
         type: 'article',
-        images: ['http://localhost:3000/fintessGoalsImage.jpg'],
-        url: 'http://localhost:3000/blogs/clenEthicalConsiderations',
+        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        url: 'https://clenpeakperformance.com/blogs/clenEthicalConsiderations',
     },
     alternates: {
-        canonical: 'http://localhost:3000/blogs/clenEthicalConsiderations',
+        canonical: 'https://clenpeakperformance.com/blogs/clenEthicalConsiderations',
     }
 };
 
@@ -41,8 +41,8 @@ function Blog() {
                 height="300"
                 href="/shop/clenFiveBoxes"
                 heading="Clenbuterol 250 tabs (5x50 tabs) / 0,02 mg"
-                oldPrice="$250.00"
-                price="$180.00"
+                oldPrice="125.00"
+                price="80.00"
                 title="clenSopharmaFiveBoxes" 
             />
             <h3 id="isItOkToTakeClen">Is it OK to take clenbuterol?</h3>
@@ -63,7 +63,7 @@ function Blog() {
             <p>Despite the ethical challenges, there are bodybuilders who serve as role models in the ethical use of clenbuterol. They prioritize responsible practices, safety, and honesty. These individuals inspire others to follow a similar path in ethical clenbuterol use, emphasizing the importance of well-being and fairness in the sport.</p>
             <h3 id="conclusion">Conclusion</h3>
             <p>When it comes to clenbuterol use in bodybuilding, ethical considerations are paramount. Balancing the pursuit of aesthetics with health, the use of performance-enhancing substances, and the ethical responsibilities in competition are crucial. Bodybuilders should approach clenbuterol use with a strong ethical compass, prioritizing well-being, fairness, and the integrity of the sport above all else.</p>
-            <Link className="readMoreLink" href="https://realmealrevolution.com/real-thinking/can-clenbuterol-affect-fertility-clenbuterol-peak-pharma/#:~:text=Experts%20have%20suggested%20that%20clenbuterol,and%20reduced%20fertility%20in%20women.">Read more about this topic.</Link>
+            <Link className="readMoreLink" href="https://realmealrevolution.com/real-thinking/can-clenbuterol-affect-fertility-clenbuterol-peak-pharma/#:~:text=Experts%20have%20suggested%20that%20clenbuterol,and%20reduced%20fertility%20in%20women.">Clenbuterol And Fertility.</Link>
             <div className="authorAndDate">
                 <p>Author: <span>Brian Johnson</span></p>
                 <p>Date: <span>2023-08-07</span></p>
