@@ -140,7 +140,8 @@ function Cart() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(body),
-                cache: 'no-store'
+                cache: 'no-store',
+                next: { revalidate: 0 }
             })
             .then(res => res.json())
             .then(() => {

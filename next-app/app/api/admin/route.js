@@ -14,9 +14,6 @@ export const POST = async (req) => {
         }     
         return new Response(JSON.stringify('Successful Login!'), {
             status: 200,
-            headers: {
-                'Cache-Control': 'no-store',
-            }
         });
     } catch (error) {
         console.error(error);

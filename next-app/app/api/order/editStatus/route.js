@@ -9,9 +9,6 @@ export const PUT = async (req) => {
         const product = await Product.findByIdAndUpdate(_id, {orderInfo}, {new: true});
         return new Response(JSON.stringify(product), {
             status: 200,
-            headers: {
-                'Cache-Control': 'no-store',
-            }
         });
     } catch (error) {
         console.error(error);

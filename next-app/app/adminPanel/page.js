@@ -20,7 +20,7 @@ function Admin() {
     }, []);
     
     const init = () => {
-        fetch('/api/getAllOrders', { cache: 'no-store' })
+        fetch('/api/getAllOrders', { cache: 'no-store', next: { revalidate: 0 } })
             .then(res => res.json())
             .then(data => {
                 setOrders(data);
@@ -52,7 +52,8 @@ function Admin() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(order),
-            cache: 'no-store'
+            cache: 'no-store',
+            next: { revalidate: 0 }
         })
             .then(res => res.json())
             .then(() => {
@@ -72,7 +73,8 @@ function Admin() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({password: password}),
-            cache: 'no-store'
+            cache: 'no-store',
+            next: { revalidate: 0 }
         })
             .then(res => res.json())
             .then(() => {
