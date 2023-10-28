@@ -2,6 +2,8 @@ import { connectToDatabase } from "@/utils/database";
 import bcrypt from "bcrypt";
 import Admin from "@/models/admin";
 
+export const dynamic = 'force-dynamic';
+
 export const POST = async (req) => {
     const body = await req.json();
 
