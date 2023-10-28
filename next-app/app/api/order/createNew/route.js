@@ -9,6 +9,9 @@ export const POST = async (req) => {
         const product = await Product.create(body);
         return new Response(JSON.stringify(product), {
             status: 200,
+            headers: {
+                'Cache-Control': 'no-store',
+            }
         });
     } catch (error) {
         console.error(error);

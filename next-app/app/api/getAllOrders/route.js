@@ -8,6 +8,9 @@ export const GET = async () => {
         const product = await Product.find();
         return new Response(JSON.stringify(product), {
             status: 200,
+            headers: {
+                'Cache-Control': 'no-store',
+            }
         });
     } catch (error) {
         console.error(error);
