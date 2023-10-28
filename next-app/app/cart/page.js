@@ -139,7 +139,8 @@ function Cart() {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(body)
+                body: JSON.stringify(body),
+                cache: 'no-store'
             })
             .then(res => res.json())
             .then(() => {
