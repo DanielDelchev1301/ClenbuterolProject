@@ -1,12 +1,12 @@
 import mongoose from 'mongoose';
 
-let isConnected = false;
+// let isConnected = false;
 
 export const connectToDatabase = async () => {
-    if (isConnected) {
-        console.log('MongoDB is already connected');
-        return;
-    }
+    // if (isConnected) {
+    //     console.log('MongoDB is already connected');
+    //     return;
+    // }
 
     try {
         const db = await mongoose.connect(process.env.MONGODB_URI, {
@@ -15,7 +15,7 @@ export const connectToDatabase = async () => {
             useUnifiedTopology: true
         });
     
-        isConnected = true;
+        // isConnected = true;
         
         console.log('MongoDB is connected');
     } catch (error) {
