@@ -294,8 +294,8 @@ function Cart() {
                                 <>
                                     <p>Dear Valued Customers,</p>
                                     <p>We are committed to providing you with the best and most reliable shipping option for your orders. Here's what you can expect with our shipping method:</p>
-                                    <p><strong>Shipping Cost:</strong> Enjoy <strong>shipping in whole Europe</strong> for just <strong>9.99€</strong>, no extra costs. It's our way of making your shopping experience even better.</p>
-                                    <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our <strong>fast shipping</strong> option ensures that you receive your packages within just 2-5 days.</p>
+                                    <p><strong>Shipping Cost:</strong> Enjoy <strong>shipping in whole World</strong> for just <strong>9.99€</strong>, no extra costs. It's our way of making your shopping experience even better.</p>
+                                    <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our <strong>fast shipping</strong> option ensures that you receive your packages within just 2-5 days in Europe and 12-15 days in USA and other parts of the World.</p>
                                     <p><strong>Security:</strong> We understand the importance of your orders arriving safely and securely. Our shipping service is a tried-and-true method with a strong track record for the safe delivery of packages.</p>
                                     <p><strong>Reliability:</strong> Our shipping service have a well-established network that ensures your package's timely delivery. You can count on us to get your order to you promptly.</p>
                                     <p><strong>Convenience:</strong> We offer the convenience of delivering to your doorstep. You won't need to visit a courier office or take time off work to receive your package.</p>
@@ -319,15 +319,23 @@ function Cart() {
                     <h3 className="cartShippingHeader">Payment Method</h3>
                     <div className="cartShippingInfoContainer">
                         <div className="cartShippingMethodContainer">
-                            <p><strong>Convenient Cash on Delivery</strong></p>
+                            <p><strong>Bank Transfer</strong></p>
                             <p>Dear Valued Customers,</p>
-                            <p>We're pleased to offer you the convenience and peace of mind that comes with our preferred payment method: Cash on Delivery. Here are the benefits you can enjoy with this payment option:</p>
-                            <p><strong>Security:</strong> With Cash on Delivery, you only make payment when your order arrives at your doorstep. This ensures that you can inspect your order and be completely satisfied before parting with your money.</p>
-                            <p><strong>Hassle-Free:</strong> No need to share sensitive financial information online. Pay with cash upon delivery, making the payment process straightforward and worry-free.</p>
-                            <p><strong>Convenience:</strong> It's the ultimate convenience - just keep the exact amount of cash ready when your order arrives, and our delivery team will handle the rest.</p>
-                            <p><strong>Trustworthy:</strong> We value your trust, and Cash on Delivery demonstrates our commitment to your satisfaction and the quality of our products.</p>
-                            <p>Your peace of mind is our priority, and we are confident that Cash on Delivery is a secure and hassle-free payment method. If you have any questions or concerns about your payment, please don't hesitate to reach out to our email: <Link href="mailto:clenpeakperformance@gmail.com" className="linkToEmail">clenpeakperformance@gmail.com</Link> .</p>
-                            <p>Thank you for choosing us, and we look forward to providing you with a smooth and secure shopping experience.</p>
+                            <p>We are delighted to introduce the Bank Transfer option as a secure and convenient payment method for your orders. Here are the advantages you can enjoy with this payment choice:</p>
+                            <p><strong>Security:</strong> Bank Transfer ensures a secure transaction as you initiate the payment directly from your bank account. This method offers a reliable and well-established process for your peace of mind.</p>
+                            <p><strong>Efficiency:</strong> Make your payment conveniently from the comfort of your home through online banking or by visiting your nearest bank branch. This method is efficient, saving you time and effort.</p>
+                            <p><strong>Record Keeping:</strong> Bank transfers provide a clear and traceable record of your payment, offering transparency and simplifying your financial records.</p>
+                            <p><strong>No Cash Handling:</strong> With Bank Transfer, you don't need to handle physical cash. This reduces the risk associated with cash transactions and provides an electronic trail for added security.</p>
+                            <p>To complete your order via Bank Transfer, please find our bank details below:</p>
+                            <p><strong>Bank Name:</strong> Wise</p>
+                            <p><strong>Account Holder:</strong> Damyan Petkov</p>
+                            <p><strong>IBAN:</strong> BE29 9672 0928 7364</p>
+                            <p><strong>BIC/SWIFT:</strong> TRWIBEB1XXX</p>
+                            <p><strong>Bank Address:</strong> floor 3, Rue Du Trone 100, Brussels, 1050</p>
+                            <p><strong>Reference/Remark:</strong> Your Order Number &#40;will find it in your mail after order completion&#41;</p>
+                            <p>Once the transfer is complete, kindly send the transaction confirmation and your order number to our email at  <Link href="mailto:clenpeakperformance@gmail.com" className="linkToEmail">clenpeakperformance@gmail.com</Link> and we will ship your order.</p>
+                            <p>If you have any questions or require assistance with the Bank Transfer process, please feel free to reach out to us. We are here to ensure a seamless and secure shopping experience.</p>
+                            <p>Thank you for choosing us, and we look forward to serving you with excellence.</p>
                             <p>Best regards,</p>
                             <p><strong>Clen peak Performance</strong></p>
                         </div>

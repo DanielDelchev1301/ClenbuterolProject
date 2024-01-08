@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import '../../styles/admin.css';
 import { Autocomplete, TextField } from "@mui/material";
-import { emailTemplate } from "./adminHelper";
+import { emailTemplate, secondEmailTemplate } from "./adminHelper";
 
 function Admin() {
     const [orders, setOrders] = useState([]);
@@ -94,6 +94,11 @@ function Admin() {
         navigator.clipboard.writeText(text);
     };
 
+    const copyFunctionSecond = () => {
+        const text = secondEmailTemplate();
+        navigator.clipboard.writeText(text);
+    };
+
     return (
         <div className="adminMainContainer">
             {!isAdmin
@@ -169,6 +174,7 @@ function Admin() {
                                         <button className="editModeButton" onClick={() => setIsEditMode(prev => { return {...prev, [order._id]: !prev[order._id]} })}>Edit</button>
                                     }
                                     <button onClick={() => copyFunction(order)} className="copyButton">Copy</button>
+                                    <button onClick={copyFunctionSecond} className="copyButton">CopySecond</button>
                                 </div>
                             }
                         </div>

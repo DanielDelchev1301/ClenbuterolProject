@@ -138,8 +138,8 @@ function Shop() {
                 <h3>Shipping Details</h3>
                 <p>Dear Valued Customers,</p>
                 <p>We are committed to providing you with the best and most reliable shipping option for your orders. Here's what you can expect with our shipping method:</p>
-                <p><strong>Shipping Cost:</strong> Enjoy <strong>shipping in whole Europe</strong> for just <strong>9.99€</strong>, no extra costs. It's our way of making your shopping experience even better.</p>
-                <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our <strong>fast shipping</strong> option ensures that you receive your packages within just 2-5 days.</p>
+                <p><strong>Shipping Cost:</strong> Enjoy <strong>shipping in whole World</strong> for just <strong>9.99€</strong>, no extra costs. It's our way of making your shopping experience even better.</p>
+                <p><strong>Speedy Delivery:</strong> We know how crucial it is for your orders to reach you quickly and reliably. Our <strong>fast shipping</strong> option ensures that you receive your packages within just 2-5 days in Europe and 12-15 days in USA and other parts of the World.</p>
                 <p><strong>Security:</strong> We understand the importance of your orders arriving safely and securely. Our shipping service is a tried-and-true method with a strong track record for the safe delivery of packages.</p>
                 <p><strong>Reliability:</strong> Our shipping service have a well-established network that ensures your package's timely delivery. You can count on us to get your order to you promptly.</p>
                 <p><strong>Convenience:</strong> We offer the convenience of delivering to your doorstep. You won't need to visit a courier office or take time off work to receive your package.</p>
