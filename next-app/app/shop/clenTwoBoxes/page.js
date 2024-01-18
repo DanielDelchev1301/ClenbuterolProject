@@ -9,10 +9,10 @@ export const metadata = {
         title: 'clenSopharmaFiveBoxes',
         type: 'website',
         images: ['https://clenpeakperformance.com/clenSopharmaFiveBoxesWatermark.jpg'],
-        url: 'https://clenpeakperformance.com/shop/clenFiveBoxes',
+        url: 'https://clenpeakperformance.com/shop/clenTwoBoxes',
     },
     alternates: {
-      canonical: 'https://clenpeakperformance.com/shop/clenFiveBoxes',
+      canonical: 'https://clenpeakperformance.com/shop/clenTwoBoxes',
     }
 };
 
