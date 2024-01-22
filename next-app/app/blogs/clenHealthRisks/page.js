@@ -1,6 +1,7 @@
 import Product from '@/components/Product';
 import '../../../styles/blog.css'
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Clenbuterol Health Risks: What You Need to Know',
@@ -9,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenHealthRisks',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/healthRisks.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenHealthRisks',
     },
     alternates: {
@@ -31,6 +32,14 @@ function Blog() {
             <h3 id="dualNatureOfClen">The Dual Nature of Clenbuterol</h3>
             <p>Clenbuterol, commonly referred to as "clen," is a sympathomimetic amine initially developed for the treatment of respiratory conditions like asthma. It belongs to a class of compounds that affect the sympathetic nervous system and stimulate beta-2 adrenergic receptors in the body. While clenbuterol is approved for medical use in some countries, it is not authorized for human use in the United States.</p>
             <p>In the fitness and bodybuilding community, clenbuterol is sought after for its potential to increase metabolism, promote fat loss, and preserve lean muscle mass. However, these benefits come with potential health risks that users should be aware of.</p>
+            <Image
+                title="healthRisks"
+                src="/healthRisks.jpg"
+                alt="healthRisks" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h3>Is clenbuterol safe long-term?</h3>
             <p>Clenbuterol is not considered safe for long-term use. It's primarily prescribed for short-term treatment of respiratory conditions, and its long-term effects on human health are not well-studied. Prolonged clenbuterol use can lead to a range of potential health risks.</p>
             <p>One significant concern is the development of tolerance. Over time, your body may become less responsive to clenbuterol, necessitating higher doses for the same effects. This can increase the risk of side effects, including heart palpitations, high blood pressure, and cardiac issues.</p>

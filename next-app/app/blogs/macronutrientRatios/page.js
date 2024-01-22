@@ -1,6 +1,7 @@
 import Product from '@/components/Product';
 import '../../../styles/blog.css'
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Macronutrient Ratios for Bodybuilding: A Step-by-Step Guide',
@@ -9,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenAlternatives',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/macronutrientRatios.jpg'],
         url: 'https://clenpeakperformance.com/blogs/macronutrientRatios',
     },
     alternates: {
@@ -33,6 +34,14 @@ function Blog() {
             <h3 id="understandingMacronutrients">Understanding the Macronutrients</h3>
             <p>Start with the basics. Learn about the critical role of macronutrients - protein, carbohydrates, and fats - in supporting muscle development, providing energy, and maintaining hormonal balance.</p>
             <p>Gain insights into the specific benefits of each macronutrient for your bodybuilding goals.</p>
+            <Image
+                title="macronutrientRatios"
+                src="/macronutrientRatios.jpg"
+                alt="macronutrientRatios" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h3 id="proteinMuscleFriend">Protein - Your Muscle's Best Friend</h3>
             <p>Deep dive into protein as the cornerstone of muscle growth. Understand how protein aids in muscle repair and development.</p>
             <p><strong>Formula: Protein Needs = Body Weight &#40;kg&#41; x Recommended Protein Intake &#40;g/kg&#41;</strong></p>

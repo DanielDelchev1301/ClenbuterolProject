@@ -1,6 +1,7 @@
 import Product from '@/components/Product';
 import '../../../styles/blog.css'
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Legal Status of Clenbuterol: A Global Perspective',
@@ -9,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenLegalStatus',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/ethicalConsiderations.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenLegalStatus',    
     },
     alternates: {
@@ -34,6 +35,14 @@ function Blog() {
             <Link href="#considerationsForIndividuals" className="linkToDifferentPartsOfTheBlog">Considerations for Individuals</Link>
             <Link href="#conclusion" className="linkToDifferentPartsOfTheBlog">Conclusion</Link>
             <p>Clenbuterol, a compound with thermogenic and muscle-sparing properties, has gained popularity in the fitness and bodybuilding community. However, its legal status varies across the world, with some regions allowing its use for medical purposes, while others have imposed strict regulations or bans. In this comprehensive guide, we will explore the global legal status of clenbuterol, shedding light on its availability, restrictions, and considerations for individuals interested in its use.</p>
+            <Image
+                title="ethicalConsiderations"
+                src="/ethicalConsiderations.jpg"
+                alt="ethicalConsiderations" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h3 id="understandingClen">Understanding Clenbuterol</h3>
             <p>Clenbuterol, often referred to as "clen," is a sympathomimetic amine initially developed for the treatment of respiratory conditions such as asthma. It belongs to a class of compounds that affect the sympathetic nervous system, particularly by stimulating beta-2 adrenergic receptors in the body. Over time, it has garnered attention for its potential to boost metabolism, facilitate fat loss, and preserve lean muscle mass, making it a sought-after substance for various fitness and bodybuilding goals.</p>
             <h3 id="isClenLegalInEurope">Is clenbuterol Legal in Europe?</h3>

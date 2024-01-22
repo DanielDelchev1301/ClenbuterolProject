@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'musclePreservationWithClen',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/musclePreservation.jpg'],
         url: 'https://clenpeakperformance.com/blogs/musclePreservationWithClen',
     },
     alternates: {
@@ -30,6 +30,14 @@ function Blog() {
             <Link href="#strategiesForMusclePreservation" className="linkToDifferentPartsOfTheBlog">Strategies for Muscle Preservation with Clenbuterol</Link>
             <Link href="#conclusion" className="linkToDifferentPartsOfTheBlog">Conclusion</Link>
             <p>When it comes to bodybuilding and fitness, the pursuit of lean muscle mass is a top priority. However, there are times when athletes and fitness enthusiasts face the challenge of preserving their hard-earned muscle while pursuing other goals. Clenbuterol, a substance known for its thermogenic and muscle-sparing effects, has gained attention for its potential role in muscle preservation. In this article, we will explore the strategies and techniques for preserving lean muscle mass with the use of clenbuterol.</p>
+            <Image
+                title="musclePreservation"
+                src="/musclePreservation.jpg"
+                alt="musclePreservation" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h3 id="theImportanceOfMusclePreservation">The Importance of Muscle Preservation</h3>
             <p>Lean muscle mass not only contributes to a well-defined physique but is also critical for strength and power. Whether you are in a cutting phase, recovering from an injury, or aiming to maintain muscle during dietary changes, muscle preservation is key to achieving your fitness goals.</p>
             <h3 id="doesClenPreserveMuscle">Does clenbuterol preserve muscle mass?</h3>

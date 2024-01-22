@@ -8,7 +8,7 @@ export const metadata = {
     openGraph: {
         title: 'clenSopharmaFiveBoxes',
         type: 'website',
-        images: ['https://clenpeakperformance.com/clenSopharmaFiveBoxesWatermark.jpg'],
+        images: ['https://clenpeakperformance.com/clenSopharmaOneBoxWatermark.jpg'],
         url: 'https://clenpeakperformance.com/shop/clenTwoBoxes',
     },
     alternates: {

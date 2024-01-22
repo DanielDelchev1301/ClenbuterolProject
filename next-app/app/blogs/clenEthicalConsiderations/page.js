@@ -1,6 +1,7 @@
 import Product from '@/components/Product';
 import '../../../styles/blog.css'
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Ethical Considerations of Clenbuterol Use in Bodybuilding',
@@ -9,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenEthicalConsiderations',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/ethicalConsiderations.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenEthicalConsiderations',
     },
     alternates: {
@@ -29,6 +30,14 @@ function Blog() {
             <Link href="#doesClenAffectMaleFertility" className="linkToDifferentPartsOfTheBlog">Does clenbuterol affect male fertility?</Link>
             <Link href="#conclusion" className="linkToDifferentPartsOfTheBlog">Conclusion</Link>
             <p>As bodybuilders strive to achieve their physical and performance goals, ethical considerations play a significant role in their journey, especially when it comes to the use of substances like clenbuterol. This guide delves into the ethical landscape of clenbuterol use in bodybuilding, addressing the moral dilemmas and providing insights into responsible and ethical practices within the sport.</p>
+            <Image
+                title="ethicalConsiderations"
+                src="/ethicalConsiderations.jpg"
+                alt="ethicalConsiderations" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h3 id="aestcheticsVsHealthBalance">The Aesthetics vs. Health Balance</h3>
             <p>One of the primary ethical considerations in bodybuilding, particularly when using substances like clenbuterol, is the delicate balance between aesthetics and health. Bodybuilders often aim for a visually impressive physique, but this aspiration should not compromise their well-being or ethical standards. It's crucial to weigh the desire for aesthetics against the potential health risks and ethical responsibility of fair competition.</p>
             <h4>Responsible Use of Clenbuterol</h4>

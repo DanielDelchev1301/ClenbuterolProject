@@ -1,6 +1,7 @@
 import Product from '@/components/Product';
 import '../../../styles/blog.css'
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Clenbuterol Testing & Detection: What Everyone Should Know',
@@ -9,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenTestingAndDetection',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/clenTesting.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenTestingAndDetection',  
     },
     alternates: {
@@ -33,6 +34,14 @@ function Blog() {
             <h3 id="significanceOfClenTesting">The Significance of Clenbuterol Testing</h3>
             <p>Anti-doping agencies and sports organizations, such as the World Anti-Doping Agency (WADA) and the International Olympic Committee (IOC), have stringent policies in place to maintain the integrity of sports and ensure fair competition. These policies prohibit the use of substances that can enhance athletic performance, including clenbuterol.</p>
             <p>Clenbuterol is included on the list of banned substances because of its potential to increase metabolism, improve endurance, and promote fat loss. Athletes who use clenbuterol in violation of anti-doping regulations gain an unfair advantage over their competitors, and it compromises the principles of fair play.</p>
+            <Image
+                title="ethicalConsiderations"
+                src="/ethicalConsiderations.jpg"
+                alt="ethicalConsiderations" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h3 id="canYouTestForClen">Can you test for clenbuterol?</h3>
             <p>Yes, clenbuterol can be detected through various testing methods, including urine and blood tests. These tests are often used in anti-doping programs, especially in competitive sports. Detection typically involves screening for clenbuterol's metabolites or residues in the body. It's essential for athletes and individuals subject to anti-doping regulations to be aware of clenbuterol testing procedures and the potential consequences of a positive test result, as its use can lead to disqualification, loss of awards, and other penalties. Responsible and informed use is crucial for those in sports where clenbuterol is prohibited to avoid unintentional violations of anti-doping regulations.</p>
             <h3 id="methodsOfClenDetection">Methods of Clenbuterol Detection</h3>

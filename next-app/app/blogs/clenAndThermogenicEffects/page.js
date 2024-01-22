@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenAndThermogenicEffects',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/increasedCoreTemperature.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenAndThermogenicEffects',
     },
     alternates: {

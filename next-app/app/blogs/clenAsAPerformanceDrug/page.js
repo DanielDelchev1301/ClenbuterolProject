@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenAsAPerformanceDrug',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/increasePerformance.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenAsAPerformanceDrug',
     },
     alternates: {

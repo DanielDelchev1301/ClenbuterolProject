@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'clenDosingProtocols',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/clenDosingProtocols.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenDosingProtocols',
     },
     alternates: {
@@ -37,6 +37,14 @@ function Blog() {
             <p>There are several common dosing protocols for clenbuterol:</p>
             <h4>Incremental Increase</h4>
             <p>Many users start with a low dose, often around 20 mcg (micrograms) per day, and gradually increase it over time. This approach helps the body acclimate to clenbuterol and may reduce side effects. For example, you might start with 20 mcg and increase the dose by 20 mcg every few days until you reach the desired dose, often in the range of 60-120 mcg per day. This approach is known as "pyramiding."</p>
+            <Image
+                title="clenDosingProtocols"
+                src="/clenDosingProtocols.jpg"
+                alt="clenDosingProtocols" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h4>Continuous Use</h4>
             <p>Some individuals prefer a continuous dosing approach, where they take a consistent dose throughout their clenbuterol cycle. This approach typically involves a constant daily dose, often in the 60-120 mcg range, and is maintained for the duration of the cycle. Continuous use is favored by those who want a steady and predictable impact on their metabolism.</p>
             <h4>Two Weeks On, Two Weeks Off</h4>

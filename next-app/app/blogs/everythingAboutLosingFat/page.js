@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'everythingAboutLosingFat',
         type: 'article',
-        images: ['https://clenpeakperformance.com/public/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/public/loseFat.jpg'],
         url: 'https://clenpeakperformance.com/blogs/everythingAboutLosingFat', 
     },
     alternates: {
@@ -35,6 +35,14 @@ function Blog() {
             <p>Physical activity is a crucial companion to dietary choices. Exercise not only burns extra calories but also helps build and preserve lean muscle, which is important for maintaining a healthy metabolism.</p>
             <p>Patience is fundamental. Fat loss should be gradual and sustainable, as rapid weight loss can lead to muscle loss and is often unsustainable in the long run. Monitoring your progress and making necessary adjustments is also essential, as every individual's body responds differently.</p>
             <p>Customization is key. What works for one person may not work for another, so be prepared to tailor your approach. Seeking consultation with a registered dietitian, nutritionist, or fitness professional can provide personalized guidance, ensuring that your approach to fat loss aligns with your specific needs and goals, all while prioritizing your overall well-being.</p>
+            <Image
+                title="loseFat"
+                src="/loseFat.jpg"
+                alt="loseFat" 
+                width={300}
+                height={300}
+                className="imageInsideBlog"
+            />
             <h3 id="mostImportantThingAboutFatLoss">What is the most important thing about losing fat?</h3>
             <p>The most crucial aspect of losing fat is sustainability. While creating a calorie deficit is at the core of fat loss, it's essential to adopt an approach that you can maintain in the long term. Rapid, drastic weight loss strategies are often difficult to sustain, and the lost weight frequently returns when you return to regular eating habits. Prioritize a well-balanced diet that provides all essential nutrients and avoids extreme restrictions. Gradual progress, such as aiming for 1-2 pounds of weight loss per week, is generally safer and more sustainable. Regular exercise is important, not only for calorie burning but also for preserving lean muscle mass. Your health and overall well-being should always be the top priority. Extreme dieting, excessive exercise, or severe calorie restrictions can have adverse effects, so it's crucial to maintain a balance that supports your overall health. Developing a healthy relationship with food through mindful eating practices, focusing on consistency, and considering consultation with a registered dietitian or nutritionist for personalized guidance are all key elements of successful and sustainable fat loss.</p>
             <iframe className="youtubeVideo"

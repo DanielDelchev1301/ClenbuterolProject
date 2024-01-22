@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'clenConsultation',
         type: 'article',
-        images: ['https://clenpeakperformance.com/fintessGoalsImage.jpg'],
+        images: ['https://clenpeakperformance.com/consultation.jpg'],
         url: 'https://clenpeakperformance.com/blogs/clenConsultation',
     },
     alternates: {
