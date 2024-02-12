@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import '../../styles/cart.css';
 import Link from 'next/link';
 import Product from '@/components/Product';
-import { Stepper, Step, StepLabel, TextField } from '@mui/material';
+import { Stepper, Step, StepLabel, TextField, Autocomplete } from '@mui/material';
+import { Country, State, City }  from 'country-state-city';
 import CartProduct from '@/components/CartProduct';
 
 const steps = ['Cart', 'Shipping', 'Payment'];
@@ -17,6 +18,8 @@ function Cart() {
     const [savedMoney, setSavedMoney] = useState(0);
     const [seeMore, setSeeMore] = useState(false);
     const [isDisabled, setIsDisabled] = useState(false);
+    const [allCountries,] = useState(Country.getAllCountries().map((country) => `${country.name},${country.isoCode}`));
+    const [allCities, setAllCities] = useState([]);
     const [shippingAddress, setShippingAddress] = useState({
         email: {
             value: '',
@@ -57,10 +60,16 @@ function Cart() {
     }, []);
 
     useEffect(() => {
+        shippingAddress.country.value
+            ? handleRemoveCityIfCountry()
+            : handleRemoveCityIfNoCountry();
+    }, [shippingAddress.country.value]);
+
+    useEffect(() => {
         setIsDisabled((!shippingAddress.firstName.value.trim().length || 
             !shippingAddress.lastName.value.trim().length || 
             !shippingAddress.country.value.trim().length || 
-            !shippingAddress.city.value.trim().length || 
+            (!shippingAddress.city.value.trim().length && allCities.length) || 
             !shippingAddress.zipCode.value.trim().length || 
             !shippingAddress.address.value.trim().length || 
             !shippingAddress.email.value.trim().length || 
@@ -99,6 +108,16 @@ function Cart() {
             setCartProductsWithQuantity({});
         }
     }, [cartProducts]);
+
+    const handleRemoveCityIfNoCountry = () => {
+        setAllCities([]);
+        handleChange('', 'city');
+    };
+
+    const handleRemoveCityIfCountry = () => {
+        setAllCities(City.getCitiesOfCountry(shippingAddress.country.value.split(',')[1]).map((city) => `${city.name},${city.stateCode}`));
+        handleChange('', 'city');
+    };
 
     const handleGoBack = () => {
         window.scrollTo({top: 300, behavior: 'smooth'});
@@ -172,7 +191,7 @@ function Cart() {
         }
         setShippingAddress(prev => ({
             ...prev,
-            [name]: {error: !_value.length, value: value}
+            [name]: {error: !_value || !_value.length, value: value == null ? '' : value}
         }));
     };
 
@@ -238,27 +257,21 @@ function Cart() {
                                 value={shippingAddress.lastName.value}
                                 onChange={(e) => handleChange(e.target.value, 'lastName')}
                             />
-                            <TextField
+                            <Autocomplete
                                 className="textField"
-                                required
-                                error={shippingAddress.country.error}
-                                helperText={shippingAddress.country.error ? 'This field is required.' : ''}
-                                label="Country"
-                                variant="standard"
-                                color="warning"
                                 value={shippingAddress.country.value}
-                                onChange={(e) => handleChange(e.target.value, 'country')}
+                                onChange={(event, newValue) => handleChange(newValue, 'country')}
+                                id="countries-autocomplete"
+                                options={allCountries}
+                                renderInput={(params) => <TextField {...params} color="warning" label="Country" />}
                             />
-                            <TextField
+                            <Autocomplete
                                 className="textField"
-                                required
-                                error={shippingAddress.city.error}
-                                helperText={shippingAddress.city.error ? 'This field is required.' : ''}
-                                label="City"
-                                variant="standard"
-                                color="warning"
                                 value={shippingAddress.city.value}
-                                onChange={(e) => handleChange(e.target.value, 'city')}
+                                onChange={(event, newValue) => handleChange(newValue, 'city')}
+                                id="cities-autocomplete"
+                                options={allCities}
+                                renderInput={(params) => <TextField {...params} color="warning" label="City" />}
                             />
                             <TextField
                                 className="textField"

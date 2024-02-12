@@ -121,6 +121,7 @@
 
 .buttonDisabled {
     pointer-events: none;
+    background-color: #cacaca;
 }
 
 .emptyShoppingCartContainer {
