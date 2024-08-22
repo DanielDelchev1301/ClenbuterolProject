@@ -131,7 +131,7 @@ function Shop() {
                     <Link href="/blogs/clenAlternatives" className="blogLinkButton">Safe & Effective Bodybuilding Alternatives to Clen</Link>
                     <Link href="/blogs/ultimateGuideForMuscleMass" className="blogLinkButton">The Ultimate Bodybuilding Guide For Muscle Mass</Link>
                     <Link href="/blogs/everythingAboutLosingFat" className="blogLinkButton">Everything You Need To Know About Fat Loss</Link>
-                    <Link href="/blogs/Clenbuterol Tolerance: Understanding and Managing It" className="blogLinkButton">Clenbuterol Tolerance: Understanding and Managing It</Link>
+                    <Link href="/blogs/clenTolerance" className="blogLinkButton">Clenbuterol Tolerance: Understanding and Managing It</Link>
                 </div>
             </div>
             <div className="shopAdditionalInfoContainer">
